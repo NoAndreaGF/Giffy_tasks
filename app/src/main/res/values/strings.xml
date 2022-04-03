@@ -1,3 +1,455 @@
 <resources>
     <string name="app_name">Giffy tasks</string>
+
+    <string name="loding">Cargando…</string>
+
+    # User data
+    <string name="mail">CORREO</string>
+    <string name="password">CONTRASEÑA</string>
+    <string name="password_confirm">CONFIRMAR CONTRASEÑA</string>
+    <string name="name_last_name">NOMBRE Y APELLIDO</string>
+    <string name="age">EDAD</string>
+    <string name="gender">SEXO</string>
+    <string name="country">PAÍS DE ORIGEN</string>
+    <string name="language">IDIOMA</string>
+    <string name="phone">TELÉFONO/CELULAR</string>
+    <string name="address">DOMICILIO</string>
+    <string name="zip_code">CÓDIGO POSTAL</string>
+
+    # Buttons
+    <string name="next">SIGUIENTE</string>
+    <string name="yes">SI</string>
+    <string name="not_now">AHORA NO</string>
+    <string name="next_1">SIGUIENTE 1/4</string>
+    <string name="next_2">SIGUIENTE 2/4</string>
+    <string name="next_3">SIGUIENTE 3/4</string>
+    <string name="next_4">FINALIZAR 4/4</string>
+    <string name="filter_btn">FILTRAR RESULTADOS</string>
+    <string name="finish">FINALIZAR</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="save">GUARDAR</string>
+    <string name="delete">ELIMINAR</string>
+    <string name="save_changes">GUARDAR CAMBIOS</string>
+    <string name="sing_in">INGRESAR</string>
+    <string name="gift_recommendation">El regalo que tú buscas es…</string>
+    <string name="log_off">DESCONECTARSE</string>
+    <string name="agree">ACEPTAR</string>
+    <string name="add_friend">AGREGAR A MI LISTA DE AMIGOS</string>
+        <string name="send">SOLICITUD DE AMISTAD ENVIADA</string>
+    <string name="add_wishlist">WISHLIST</string>
+    <string name="add_list">LISTAS</string>
+        <string name="example_list1">Ver más tarde</string>
+        <string name="example_list2">Navidad 2022</string>
+        <string name="example_list3">Ofertas</string>
+
+    <string name="invitation">INVITAR A LA APP</string>
+    <string name="send_quiz">ENVIAR QUIZ</string>
+    <string name="answer_quiz">HACER QUIZ</string>
+    <string name="back">VOLVER</string>
+    
+    # TextFilds
+    <string name="write">Escribe aquí…</string>
+    <string name="search">Buscar…</string>
+    <string name="upload">Subir archivo…</string>
+
+    # Quizz
+    <string name="question_start">¿QUIERES HACER EL QUIZ PARA TU REGALO PERFECTO?</string>
+    <string name="quizz_title">QUIZ DEL REGALO PERFECTO</string>
+    <string name="quizz_desc">Toda la información que proporcionas está protegida, únicamente tus amigos podrán verla.</string>
+
+    <string name="question1">1. Selecciona tus hobbies.</string>
+    <string name="music">MÚSICA</string>
+    <string name="drawing">DIBUJAR</string>
+    <string name="reading">LEER</string>
+    <string name="sports">DEPORTE</string>
+    <string name="cooking">COCINAR</string>
+    <string name="movies">PELICULAS</string>
+    <string name="gardening">JARDINERIA</string>
+    <string name="dancing">BAILAR</string>
+
+    <string name="question2">2. ¿Cuál es tu comida favorita?</string>
+    <string name="mexican">MEXICANA</string>
+    <string name="italian">ITALIANA</string>
+    <string name="chinese">CHINA</string>
+    <string name="spanish">ESPAÑOLA</string>
+    <string name="swiss">SUIZA</string>
+    <string name="fast_food">RÁPIDA</string>
+
+    <string name="question3">3. ¿Qué tipo de música escuchas?</string>
+    <string name="none">NINGUNA</string>
+    <string name="rap">RAP</string>
+    <string name="pop">POP</string>
+    <string name="reggeaton">REGGEATON</string>
+    <string name="kpop">K-POP</string>
+    <string name="rock">ROCK</string>
+
+    <string name="question4">4. ¿Cuáles son tus tallas de ropa?</string>
+    <string name="tshirt">CAMISETA</string>
+    <string name="pants">PANTALÓN</string>
+    <string name="shoes">ZAPATOS</string>
+    
+    <string name="question5">5. ¿Eres de flores o de chocolate?</string>
+    <string name="question5_answer1">Prefiero que me regalen cosas</string>
+    <string name="question5_answer2">Prefiero que me regalen comida</string>
+
+    <string name="question6">6. Elige el estampado que más te guste.</string>
+
+    <string name="question7">7. Selecciona tus colores favoritos.</string>
+    <string name="red">ROJO</string>
+    <string name="orange">NARANJA</string>
+    <string name="yellow">AMARILLO</string>
+    <string name="green">VERDE</string>
+    <string name="blue">AZUL</string>
+    <string name="purple">MORADO</string>
+    <string name="brown">CAFÉ</string>
+    <string name="black">NEGRO</string>
+    <string name="white">BLANCO</string>
+
+    <string name="question8">8. Selecciona tus dulces favoritos.</string>
+    <string name="chocolate">CHOCOLATE</string>
+    <string name="gummies">GOMITAS</string>
+    <string name="gum">CHICLES</string>
+    <string name="caramels">CARAMELOS</string>
+    <string name="chile">DE CHILE</string>
+    <string name="fruits">DE FRUTAS</string>
+    <string name="typical">TÍPICOS</string>
+    <string name="handmade">ARTESANALES</string>
+    <string name="filled">RELLENOS</string>
+
+    <string name="question9">9. ¿Qué modelo de celular tienes?</string>
+
+    <string name="question10">10. ¿Qué género de películas te gustan?</string>
+    <string name="action">ACCIÓN</string>
+    <string name="fiction">FICCIÓN</string>
+    <string name="scifi">CIENCIA FICCIÓN</string>
+    <string name="comedy">COMEDIA</string>
+    <string name="romance">ROMANCE</string>
+    <string name="animated">ANIMADAS</string>
+
+    <string name="question11">11. ¿Prefieres un regalo o dinero?</string>
+    <string name="gift">REGALO</string>
+    <string name="money">DINERO</string>
+
+    <string name="question12">12. ¿Qué te gusta de la cultura popular?</string>
+    <string name="star_wars">STAR WARS</string>
+    <string name="marvel">MARVEL</string>
+    <string name="dc">DC</string>
+    <string name="harry_potter">HARRY POTTER</string>
+    <string name="nintendo">NINTENDO</string>
+    <string name="disney">DISNEY</string>
+    <string name="wwe">WWE</string>
+    <string name="simpson">LOS SIMPSON</string>
+    <string name="silent_hill">SILENT HILL</string>
+
+    <string name="question13">13. Elige lo que NO te gustaría de regalo.</string>
+    <string name="clothing">ROPA</string>
+    <string name="food">COMIDA</string>
+    <string name="toys">JUGUETES</string>
+
+    <string name="question14">14. ¿Algo que agregar?</string>
+
+    <string name="question15">15. ¿Qué te gustaría que te regalaran?</string>
+    <string name="plush_toys">PELUCHES</string>
+    <string name="accessories">ACCESORIOS</string>
+    <string name="perfum">PERFUME/LOCIÓN</string>
+    <string name="tech">TECNOLOGÍA</string>
+    <string name="stationery">PAPELERÍA</string>
+    <string name="videogames">VIDEOJUEGOS</string>
+    <string name="collectibles">COLECCIONABLES</string>
+    <string name="makeup">MAQUILLAJE</string>
+    <string name="games">JUEGOS</string>
+
+    # Filter
+    <string name="filter">FILTRAR POR:</string>
+    <string name="relevance">Más relevantes</string>
+    <string name="low_price">Menor precio</string>
+    <string name="high_price">Mayor precio</string>
+    <string name="interest_free">Meses sin intereses</string>
+    <string name="free_shipping">Envió gratis</string>
+    <string name="price">Precio</string>
+    <string name="discount">Descuentos/Promociones</string>
+
+    <string name="filters">FILTROS</string>
+
+    # Store screen
+    <string name="affiliated">TIENDAS AFILIADAS</string>
+    <string name="amazon">AMAZON</string>
+    <string name="amazon1">Ver más en Amazon…</string>
+    <string name="mercado_libre">MERCADO LIBRE</string>
+    <string name="mercado_libre1">Ver más en Mercado Libre…</string>
+    <string name="ebay">EBAY</string>
+    <string name="ebay1">Ver más en Ebay…</string>
+    <string name="walmart">WALMART</string>
+
+    <string name="category1">TECNOLOGÍA</string>
+    <string name="category2">BELLEZA</string>
+    <string name="category3">DEPORTES</string>
+    <string name="category4">CASA</string>
+
+    # Example products
+    <string name="roku">ROKU dispo…</string>
+    <string name="ink">HP tinta par…</string>
+    <string name="camera">Cámara web…</string>
+    <string name="battery">Batería para…</string>
+    <string name="converter">Convertidor…</string>
+    <string name="devices">Dispositivo d…</string>
+    <string name="processor">Procesador…</string>
+    <string name="monitor">Monitor HP…</string>
+    <string name="cable">Cable carga…</string>
+    <string name="extension">Extensión d…</string>
+
+    # Menu
+    <string name="home">HOME</string>
+    <string name="stores">TIENDAS</string>
+    <string name="calendar">CALENDARIO</string>
+    <string name="notifications">NOTIFICACIONES</string>
+    <string name="profile">PERFIL</string>
+
+    # Notificationa example
+    <string name="day">SÁBADO 15-ENERO</string>
+    <string name="day_desc">Aniversario 17 mamá y papá</string>
+
+    # Bank acount
+    <string name="name_credit_card">NOMBRE DE LA TARJETA</string>
+    <string name="number_credit_card">NÚMEROS DE LA TARJETA</string>
+    <string name="date_credit_card">FECHA</string>
+    <string name="cvv_credit_card">CVV</string>
+    <string name="credit_card_desc">Toda la información que proporcionas está protegida.</string>
+
+    <string name="friends_email">CORREO ELECTRONICO DE TU AMIGO</string>
+
+    <string name="passed">¡ENHORABUENA!</string>
+    <string name="passed_desc">¡La tarjeta de regalo ya fue enviada! Dile a tu amigo que revise su correo :)</string>
+
+    # Recommendations
+    <string name="recomendations">REGALOS RECOMENDADOS</string>
+
+    # Recommendations examples
+    <string name="example1">Collar chapa…</string>
+    <string name="example2">Acrílico orga…</string>
+    <string name="example3">Organizar de…</string>
+    <string name="example4">Cosmetiquer…</string>
+    <string name="example5">Spray fijador…</string>
+    <string name="example6">Polvo para ro…</string>
+    <string name="example7">Brochas de m…</string>
+    <string name="example8">Perfume de m…</string>
+    <string name="example9">Crema de ma…</string>
+
+    <string name="change_password_desc">Se ha enviado una solicitud de cambio de contraseña a tu correo.</string>
+
+    # Store examples
+    <string name="store1">Balón de futbol…</string>
+    <string name="store2">Balón de fút…</string>
+
+    # Months
+    <string name="january">ENERO</string>
+    <string name="february">FEBRERO</string>
+
+    # Gift cards
+    <string name="gift_card">GIFT CARDS</string>
+    <string name="five_hundred">$500</string>
+    <string name="seven_hundred">$700</string>
+    <string name="one_thousand">$1000</string>
+
+    # Titles
+    <string name="invite_frinds">Invitar amigos</string>
+    <string name="send_quizz">Enviar quiz del regalo perfecto</string>
+
+    # Profile-Groups screen
+    <string name="group_pic">Foto de portada</string>
+    <string name="members">Miembros</string>
+    <string name="add_friends">AGREGAR AMIGO</string>
+    <string name="upload_pic">¡SUBE UNA FOTO!</string>
+
+    # Sing in screen
+    <string name="forgot_password">¿No recuerdas tu usuario o contraseña?</string>
+    <string name="registration">¿Aún no tiene cuenta?</string>
+
+    # Advertisement  screen
+    <string name="ad_title">¡ANÚNCIATE CON NOSOTROS!</string>
+    <string name="ad_desc">Envíanos un mensaje a través de nuestras redes sociales para que tu negocio pueda anunciarse aquí.</string>
+
+    # Home screen
+    <string name="home_title">¿A QUIÉN LE VAS A REGALAR HOY?</string>
+    <string name="home_send_gift">¿No tiene cuenta?</string>
+    
+        # Example friends
+        <string name="friend1">ALAN EDUARDO TORRES</string>
+        <string name="friend2">GISSELLE VALENZUELA</string>
+        <string name="friend3">KAMILA FORNÉS LÓPEZ</string>
+        <string name="friend4">LILIAN RAMÍRES PAREDES</string>
+        <string name="friend5">CRISTINA VILLEGAS</string>
+        <string name="friend6">ELIZA APODACA</string>
+        <string name="friend7">DANIELLA SÁNCHEZ</string>
+        <string name="friend8">SALMA</string>
+
+    <string name="search_friend">Buscar amigos</string>
+    <string name="invite">Invitar amigos</string>
+
+    # Notifications screen
+    <string name="requests">SOLICITUDES DE AMISTADES</string>
+    <string name="mark_as_read">Marcar todo como leído…</string>
+    <string name="example_request1">¡SALM quiere ser tu amigo!</string>
+    <string name="example_request2">¡ALAN quiere ser tu amigo!</string>
+
+    <string name="example_calendar1">Faltan 5 días para cumpleaños de mamá.</string>
+    <string name="example_calendar2">Faltan 10 días para cumpleaños mamá.</string>
+
+    <string name="stores_products">TIENDAS Y PRODUCTOS</string>
+    <string name="example_store1">Oferta en AMAZON, ¡mira!</string>
+    <string name="example_store2">Oferta en SHEIN, ¡mira!</string>
+    
+    <string name="friends_notif">AMIGOS</string>
+    <string name="example_friend1">Tu amigo LILIAN actualizó su wishlist, ¡mira!</string>
+    <string name="example_friend2">Tu amigo KAMILA actualizó su wishlist, ¡mira!</string>
+
+    # Profile screen
+    <string name="profile_name">ERIKA CARRERA</string>
+    <string name="profile_friends">AMIGOS</string>
+    <string name="profile_quiz">QUIZ</string>
+    <string name="profile_wishlist">LISTAS</string>
+    <string name="profile_groups">GRUPOS</string>
+
+    <string name="WISHLIST">WISHLIST</string>
+        <string name="example_wish1">Balón de fútbol…</string>
+        <string name="example_wish2">Dispensador de…</string>
+        <string name="example_wish3">Pulseras de ma…</string>
+        <string name="example_wish4">Camiseta lavan…</string>
+        <string name="example_wish5">Limpiador de b…</string>
+        <string name="example_wish6">Brocha para ru…</string>
+        <string name="example_wish7">Espejo decorati…</string>
+        <string name="example_wish8">Organizador de…</string>
+    
+    <string name="profile_pic1">Foto de portada</string>
+    <string name="profile_pic2">Foto de perfil</string>
+    <string name="profile_name_edit">Nombre de usuario</string>
+    <string name="profile_settings">Ajustes</string>
+
+    <string name="profile_quiz1">CAMISETA: Chica.</string>
+    <string name="profile_quiz2">PANTALÓN: 7 mexicano.</string>
+    <string name="rpofile_quiz3">ZAPATOS: 4.5 mexicano.</string>
+
+    <string name="list_example1">Ver más tarde</string>
+    <string name="list_example2">Navidad 2022</string>
+    <string name="list_example3">Ofertas</string>
+    
+    <string name="list_create">Crear nueva lista</string>
+
+    <string name="group_example1">INTERCAMBIO DEL 14 ITSON</string>
+    <string name="group_example2">FAMILIA CARRERA</string>
+    <string name="group_example3">OPTATIVA II – 11:00 VIERNES</string>
+    
+    <string name="group_create">Crear nuevo grupo</string>
+
+    <string name="profile_msj">MENSAJES</string>
+    <string name="msj_example1">UN PÁJARITO NOS DIJO…</string>
+    <string name="msj_example2">DESCUENTOS EN TECNOLOGÍA</string>
+    
+    <string name="conf_option1">Seguridad de la cuenta</string>
+    <string name="conf_option2">Historial de compras</string>
+    <string name="conf_option3">Opciones de pago</string>
+    <string name="conf_option4">Idioma</string>
+    <string name="conf_option5">Moneda</string>
+    <string name="conf_option6">Preferencias de contacto</string>
+    <string name="conf_option7">Calificación y comentarios</string>
+    <string name="conf_option8">Conéctate con nosotros</string>
+    <string name="conf_option9">Quiénes somos</string>
+    <string name="conf_option10">Código QR</string>
+    <string name="conf_version">Versión 1.1</string>
+    
+    # Synchronize friends
+    <string name="synchronize_friends">¿Quieres sincronizar tu lista de amigos?</string>
+    <string name="synchronize_friends_succes">Se ha sincronizado tu lista de amigos</string>
+    
+    # Add friend screen
+    <string name="add_friend_desc">Podrás ver la lista de amigos, los resultados del quiz y las wishlist del usuario cuando esté en tu lista de amigos.</string>
+
+    # Example gift
+    <string name="gift_name">Carsinel Mona Lisa Multicolor</string>
+    <string name="gift_desc">Zirconia Cúbica Aretes Pulsera collar Conjunto de Joyas clásicas Regalo Ideal para Mujeres</string>
+    <string name="gift_price">$368</string>
+    <string name="gift_store">Abrir en Amazon</string>
+    <string name="gift_similar">Artículos similares…</string>
+        <string name="similar1">Collar diamantes…</string>
+        <string name="similar2">Collar lapizlázuli…</string>
+        <string name="similar3">Anillo de diama…</string>
+
+    # Friend user screen
+    <string name="add_user">Agregar a amigos favoritos</string>
+    <string name="delete_friend">Eliminar de mis amigos</string>
+    <string name="notify_friend">Activar/Desactivar notificaciones</string>
+    <string name="quiz_friend">Enviar quiz del regalo perfecto</string>
+
+
+    # Save item screen
+    <string name="item_title">GUARDAR ARTÍCULO</string>
+
+    # Profile-segurity-settings screen
+    <string name="segurity_title">SEGURIDAD DE LA CUENTA</string>
+    <string name="security_option1">Verificación del correo electrónico</string>
+    <string name="security_option1_example">Tu correo aquí</string>
+    <string name="security_option2">Número de teléfono</string>
+    <string name="security_option2_example">Tú número de teléfono aquí</string>
+    <string name="security_option3">Cambiar contraseña</string>
+    <string name="security_option3_password1">Contraseña anterior</string>
+    <string name="security_option3_password2">Nueva contraseña</string>
+
+    # Purchase history screen
+    <string name="purchase_title">HISTORIAL DE COMPRAS</string>
+    <string name="purchase_example">Compraste GIFT CARD $1000 – 15/07/22</string>
+    <string name="purchase_card">Tarjeta</string>
+    <string name="purchase_card_example">9857 **** **** ****</string>
+
+    # Payment options
+    <string name="purchase_options">OPCIONES DE PAGO</string>
+
+    <string name="card_name_example">E**** C***** O *** </string>
+    <string name="card_date_example">09/**</string>
+    <string name="card_cvv_example">***0</string>
+
+    <string name="add_card">AGREGAR TARJETA</string>
+
+    # Language screen
+    <string name="es">Español</string>
+    <string name="en">Inglés</string>
+
+    # Currency screen
+    <string name="mxn">MXN $</string>
+    <string name="usd">USD $</string>
+    <string name="eur">EUR €</string>
+
+    # QR sreen
+    <string name="qr_title">TU CÓDIGO QR</string>
+    <string name="qr_desc">Comparte este código a tus amigos para que puedas agregarlos a tu lista de amigos.</string>
+    
+    <string name="qr_scan_title">ESCANEA EL CÓDIGO QR</string>
+    <string name="qr_scan_upload">Subir archivo</string>
+
+    # Preferences screen
+    <string name="preferences_title">PREFERENCIAS DE CONTACTO</string>
+    <string name="preferences_option1">Notificaciones de nuevo mensaje</string>
+    <string name="preferences_option1_turn">Apagar</string>
+    <string name="preferences_option2">Email</string>
+    <string name="preferences_unlink">Desvincular</string>
+    <string name="preferences_option2_mail_edit">Tu correo aquí</string>
+    <string name="preferences_option3">Número de teléfono</string>
+    <string name="preferences_option2_phone_edit">Tú número de teléfono aquí</string>
+
+    # Rate app screen
+    <string name="rate">VALORAR</string>
+    <string name="comments">COMENTARIOS</string>
+
+    # Contact screen
+    <string name="contact_title">CONÉCTATE CON NOSOTROS</string>
+    <string name="facebook">Facebook: Giffy Tasks</string>
+    <string name="instagram">Instagram: GiffyTasks</string>
+    <string name="twitter">Twitter: @GiffyTasks</string>
+    <string name="youtube">YouTube: Giffy Tasks</string>
+
+    # About us screen
+    <string name="about_us_title">QUIÉNES SOMOS</string>
+    <string name="about_us_desc">Giffy Tasks se trata de una empresa convertida en aplicación cuyo objetivo principal es ayudarte a encontrar el regalo perfecto, para cualquier persona, en cualquier momento del día y de una manera sencilla, rápida y que ajuste fácilmente a tu presupuesto.
+    ¡Estresarse por dar un regalo debe ser cosa del pasado! Es por eso que, gracias a la actitud emprendedora, a la innovación y a ti, Giffy Tasks se ha convertido en un proyecto de alcance mundial. Todos los días, ayudamos asientos de personas a aclarar sus mentes para conseguir, sin lugar a dudas, el mejor regalo que puedan dar.
+    No hay porqué preocuparse cuando se acerca una fecha importante; ya sea un cumpleaños, aniversario, día festivo, graduación o bautizo. ¡Con la ayuda de Giffy Tasks podrás salir de problemas, regalar algo que a tú persona le encantará y ahorrar al máximo en el proceso! ¿Qué más podrías pedir?
+    </string>
 </resources>
