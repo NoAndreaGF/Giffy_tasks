@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/first_gradient"
     android:orientation="vertical"
-    tools:context=".quiz">
+    tools:context=".quiz3">
 
     <TextView
         android:id="@+id/titulo"

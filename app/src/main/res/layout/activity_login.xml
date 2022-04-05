@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_gradient"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_final" />
+
+    <EditText
+        android:id="@+id/camiseta"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:fontFamily="@font/varela_round"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dip"
+        android:text="@string/mail"
+        android:textColor="@color/gray"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/contrasenia"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/varela_round"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="15dip"
+        android:text="@string/password"
+        android:textColor="@color/gray"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="310dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/noround_button"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/sing_in"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/olvido"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/registration"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+</LinearLayout>
