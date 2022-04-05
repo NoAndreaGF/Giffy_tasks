@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GiffyTasks">
         <activity
+            android:name=".filter"
+            android:exported="false" />
+        <activity
             android:name=".send_password"
             android:exported="false" />
         <activity
