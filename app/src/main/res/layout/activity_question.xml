@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_gradient"
+    android:orientation="vertical"
+    tools:context=".question">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="@string/question_start"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/varela_round"
+        android:background="@drawable/noround_button"
+        app:backgroundTint="@color/yellow"
+        android:text="@string/yes"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/noround_button"
+        android:fontFamily="@font/varela_round"
+        android:text="@string/not_now"
+        android:textSize="15dp" />
+</LinearLayout>

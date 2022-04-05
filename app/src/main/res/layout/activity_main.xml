@@ -19,16 +19,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/varela_round"
         android:gravity="center"
         android:text="@string/loding"
-        android:textColor="@color/white"/>
-    
+        android:textColor="@color/white" />
+
     <ImageView
         android:layout_width="370dp"
         android:layout_height="370dp"
         android:src="@drawable/rectangle_quiz"
         android:layout_marginTop="45dp"
-        android:layout_marginLeft="85dp"/>
+        android:layout_marginLeft="85dp"
+        android:alpha=".10"
+        />
 
 
 </LinearLayout>

@@ -15,4 +15,11 @@
     <color name="purple">#49365F</color>
     <color name="purple2">#7172B3</color>
     <color name="pink2">#BB2AD2</color>
+    <color name="red">#c92222</color>
+    <color name="green">#3fcd28</color>
+    <color name="brown">#67561a</color>
+    <color name="blue2">#32aed6</color>
+    <color name="yello2">#ecc80b</color>
+    <color name="orange">#ec691f</color>
+    <color name="purple3">#9e41ca</color>
 </resources>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_gradient"
+    android:orientation="vertical"
+    tools:context=".quiz">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="@string/quizz_title"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/quizz_desc"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_yellow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pregunta1"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question1"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/musica"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/music"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/dibujar"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/drawing"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/leer"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/reading"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/deporte"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/sports"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/cocinar"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/cooking"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/peliculas"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/movies"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/jardineria"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/gardening"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/otro"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/other"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/bailar"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/dancing"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pregunta2"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question2"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mexicana"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/mexican"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/italiana"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/italian"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/china"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/chinese"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/espaniola"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/spanish"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/suiza"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/swiss"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/rapida"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/fast_food"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pregunta3"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question3"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ninguna"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/none"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/rap"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/rap"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/pop"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/pop"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/reggeaton"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/reggeaton"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/kpop"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/kpop"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/rock"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/rock"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pregunta4"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question4"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/camiseta"
+            android:layout_width="310dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/varela_round"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dip"
+            android:text="@string/tshirt"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/pantalon"
+            android:layout_width="310dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/varela_round"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dip"
+            android:text="@string/pants"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="310dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/varela_round"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dip"
+            android:text="@string/shoes"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/noround_button"
+        android:fontFamily="@font/varela_round"
+        android:text="@string/next_1"
+        android:textSize="15dp" />
+
+</LinearLayout>

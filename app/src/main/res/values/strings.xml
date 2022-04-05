@@ -35,18 +35,18 @@
     <string name="log_off">DESCONECTARSE</string>
     <string name="agree">ACEPTAR</string>
     <string name="add_friend">AGREGAR A MI LISTA DE AMIGOS</string>
-        <string name="send">SOLICITUD DE AMISTAD ENVIADA</string>
+    <string name="send">SOLICITUD DE AMISTAD ENVIADA</string>
     <string name="add_wishlist">WISHLIST</string>
     <string name="add_list">LISTAS</string>
-        <string name="example_list1">Ver más tarde</string>
-        <string name="example_list2">Navidad 2022</string>
-        <string name="example_list3">Ofertas</string>
+    <string name="example_list1">Ver más tarde</string>
+    <string name="example_list2">Navidad 2022</string>
+    <string name="example_list3">Ofertas</string>
 
     <string name="invitation">INVITAR A LA APP</string>
     <string name="send_quiz">ENVIAR QUIZ</string>
     <string name="answer_quiz">HACER QUIZ</string>
     <string name="back">VOLVER</string>
-    
+
     # TextFilds
     <string name="write">Escribe aquí…</string>
     <string name="search">Buscar…</string>
@@ -66,6 +66,7 @@
     <string name="movies">PELICULAS</string>
     <string name="gardening">JARDINERIA</string>
     <string name="dancing">BAILAR</string>
+    <string name="other">OTRO</string>
 
     <string name="question2">2. ¿Cuál es tu comida favorita?</string>
     <string name="mexican">MEXICANA</string>
@@ -87,7 +88,7 @@
     <string name="tshirt">CAMISETA</string>
     <string name="pants">PANTALÓN</string>
     <string name="shoes">ZAPATOS</string>
-    
+
     <string name="question5">5. ¿Eres de flores o de chocolate?</string>
     <string name="question5_answer1">Prefiero que me regalen cosas</string>
     <string name="question5_answer2">Prefiero que me regalen comida</string>
@@ -265,23 +266,23 @@
     <string name="forgot_password">¿No recuerdas tu usuario o contraseña?</string>
     <string name="registration">¿Aún no tiene cuenta?</string>
 
-    # Advertisement  screen
+    # Advertisement screen
     <string name="ad_title">¡ANÚNCIATE CON NOSOTROS!</string>
     <string name="ad_desc">Envíanos un mensaje a través de nuestras redes sociales para que tu negocio pueda anunciarse aquí.</string>
 
     # Home screen
     <string name="home_title">¿A QUIÉN LE VAS A REGALAR HOY?</string>
     <string name="home_send_gift">¿No tiene cuenta?</string>
-    
-        # Example friends
-        <string name="friend1">ALAN EDUARDO TORRES</string>
-        <string name="friend2">GISSELLE VALENZUELA</string>
-        <string name="friend3">KAMILA FORNÉS LÓPEZ</string>
-        <string name="friend4">LILIAN RAMÍRES PAREDES</string>
-        <string name="friend5">CRISTINA VILLEGAS</string>
-        <string name="friend6">ELIZA APODACA</string>
-        <string name="friend7">DANIELLA SÁNCHEZ</string>
-        <string name="friend8">SALMA</string>
+
+    # Example friends
+    <string name="friend1">ALAN EDUARDO TORRES</string>
+    <string name="friend2">GISSELLE VALENZUELA</string>
+    <string name="friend3">KAMILA FORNÉS LÓPEZ</string>
+    <string name="friend4">LILIAN RAMÍRES PAREDES</string>
+    <string name="friend5">CRISTINA VILLEGAS</string>
+    <string name="friend6">ELIZA APODACA</string>
+    <string name="friend7">DANIELLA SÁNCHEZ</string>
+    <string name="friend8">SALMA</string>
 
     <string name="search_friend">Buscar amigos</string>
     <string name="invite">Invitar amigos</string>
@@ -298,7 +299,7 @@
     <string name="stores_products">TIENDAS Y PRODUCTOS</string>
     <string name="example_store1">Oferta en AMAZON, ¡mira!</string>
     <string name="example_store2">Oferta en SHEIN, ¡mira!</string>
-    
+
     <string name="friends_notif">AMIGOS</string>
     <string name="example_friend1">Tu amigo LILIAN actualizó su wishlist, ¡mira!</string>
     <string name="example_friend2">Tu amigo KAMILA actualizó su wishlist, ¡mira!</string>
@@ -311,15 +312,15 @@
     <string name="profile_groups">GRUPOS</string>
 
     <string name="WISHLIST">WISHLIST</string>
-        <string name="example_wish1">Balón de fútbol…</string>
-        <string name="example_wish2">Dispensador de…</string>
-        <string name="example_wish3">Pulseras de ma…</string>
-        <string name="example_wish4">Camiseta lavan…</string>
-        <string name="example_wish5">Limpiador de b…</string>
-        <string name="example_wish6">Brocha para ru…</string>
-        <string name="example_wish7">Espejo decorati…</string>
-        <string name="example_wish8">Organizador de…</string>
-    
+    <string name="example_wish1">Balón de fútbol…</string>
+    <string name="example_wish2">Dispensador de…</string>
+    <string name="example_wish3">Pulseras de ma…</string>
+    <string name="example_wish4">Camiseta lavan…</string>
+    <string name="example_wish5">Limpiador de b…</string>
+    <string name="example_wish6">Brocha para ru…</string>
+    <string name="example_wish7">Espejo decorati…</string>
+    <string name="example_wish8">Organizador de…</string>
+
     <string name="profile_pic1">Foto de portada</string>
     <string name="profile_pic2">Foto de perfil</string>
     <string name="profile_name_edit">Nombre de usuario</string>
@@ -332,19 +333,19 @@
     <string name="list_example1">Ver más tarde</string>
     <string name="list_example2">Navidad 2022</string>
     <string name="list_example3">Ofertas</string>
-    
+
     <string name="list_create">Crear nueva lista</string>
 
     <string name="group_example1">INTERCAMBIO DEL 14 ITSON</string>
     <string name="group_example2">FAMILIA CARRERA</string>
     <string name="group_example3">OPTATIVA II – 11:00 VIERNES</string>
-    
+
     <string name="group_create">Crear nuevo grupo</string>
 
     <string name="profile_msj">MENSAJES</string>
     <string name="msj_example1">UN PÁJARITO NOS DIJO…</string>
     <string name="msj_example2">DESCUENTOS EN TECNOLOGÍA</string>
-    
+
     <string name="conf_option1">Seguridad de la cuenta</string>
     <string name="conf_option2">Historial de compras</string>
     <string name="conf_option3">Opciones de pago</string>
@@ -356,11 +357,11 @@
     <string name="conf_option9">Quiénes somos</string>
     <string name="conf_option10">Código QR</string>
     <string name="conf_version">Versión 1.1</string>
-    
+
     # Synchronize friends
     <string name="synchronize_friends">¿Quieres sincronizar tu lista de amigos?</string>
     <string name="synchronize_friends_succes">Se ha sincronizado tu lista de amigos</string>
-    
+
     # Add friend screen
     <string name="add_friend_desc">Podrás ver la lista de amigos, los resultados del quiz y las wishlist del usuario cuando esté en tu lista de amigos.</string>
 
@@ -370,9 +371,9 @@
     <string name="gift_price">$368</string>
     <string name="gift_store">Abrir en Amazon</string>
     <string name="gift_similar">Artículos similares…</string>
-        <string name="similar1">Collar diamantes…</string>
-        <string name="similar2">Collar lapizlázuli…</string>
-        <string name="similar3">Anillo de diama…</string>
+    <string name="similar1">Collar diamantes…</string>
+    <string name="similar2">Collar lapizlázuli…</string>
+    <string name="similar3">Anillo de diama…</string>
 
     # Friend user screen
     <string name="add_user">Agregar a amigos favoritos</string>
@@ -421,7 +422,7 @@
     # QR sreen
     <string name="qr_title">TU CÓDIGO QR</string>
     <string name="qr_desc">Comparte este código a tus amigos para que puedas agregarlos a tu lista de amigos.</string>
-    
+
     <string name="qr_scan_title">ESCANEA EL CÓDIGO QR</string>
     <string name="qr_scan_upload">Subir archivo</string>
 
@@ -452,4 +453,15 @@
     ¡Estresarse por dar un regalo debe ser cosa del pasado! Es por eso que, gracias a la actitud emprendedora, a la innovación y a ti, Giffy Tasks se ha convertido en un proyecto de alcance mundial. Todos los días, ayudamos asientos de personas a aclarar sus mentes para conseguir, sin lugar a dudas, el mejor regalo que puedan dar.
     No hay porqué preocuparse cuando se acerca una fecha importante; ya sea un cumpleaños, aniversario, día festivo, graduación o bautizo. ¡Con la ayuda de Giffy Tasks podrás salir de problemas, regalar algo que a tú persona le encantará y ahorrar al máximo en el proceso! ¿Qué más podrías pedir?
     </string>
+    <string name="title_activity_home">home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

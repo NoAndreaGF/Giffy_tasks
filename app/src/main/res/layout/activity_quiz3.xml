@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_gradient"
+    android:orientation="vertical"
+    tools:context=".quiz">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="@string/quizz_title"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/quizz_desc"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_yellow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pregunta9"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question9"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/modelo"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/varela_round"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dip"
+            android:text="@string/write"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/pregunta10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question10"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/accion"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/action"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/ficcion"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/fiction"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/ciencia"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/scifi"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/comedia"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/comedy"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/romance"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/romance"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/animadas"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/animated"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pregunta11"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question11"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/regalo"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/gift"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/dinero"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/money"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pregunta12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question12"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/starwars"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/star_wars"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/marvel"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/marvel"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/dc"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/dc"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/harryPotter"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/harry_potter"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/nintendo"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/nintendo"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/disney"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/disney"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/wwe"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/wwe"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/simpson"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/simpson"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/silent_hill"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/silent_hill"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/pregunta13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question13"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ropa"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/clothing"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/comida"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/food"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/juguetes"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                android:paddingTop="2dp"
+                android:text="@string/toys"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pregunta14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question14"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/algomas"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/varela_round"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dip"
+            android:text="@string/write"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/noround_button"
+        android:fontFamily="@font/varela_round"
+        android:text="@string/next_3"
+        android:textSize="15dp" />
+
+</LinearLayout>

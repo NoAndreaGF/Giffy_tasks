@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_gradient"
+    android:orientation="vertical"
+    tools:context=".quiz">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="@string/quizz_title"
+        android:textColor="@color/white"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/quizz_desc"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_yellow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pregunta15"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/question15"
+            android:textColor="@color/purple"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/juguetes" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/peluche" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/camiseta" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dinero" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/accesorios" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/locion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bocina" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cuaderno" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/juegos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/funko" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/maquillaje" />
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_image"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/pictionary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/noround_button"
+        android:fontFamily="@font/varela_round"
+        android:text="@string/next_4"
+        android:textSize="15dp" />
+
+</LinearLayout>
