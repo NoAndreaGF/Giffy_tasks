@@ -49,6 +49,33 @@
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/nav_header_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/menu/activity_main_drawer.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/menu/home.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable-xxxhdpi/border_image.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable/border_bottom.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable/border_right_image.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable/border_top.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_filter.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_invite.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_messages.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_my_group.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_my_list.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_navigation.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_question.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_quiz2.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_quiz3.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_quiz4.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_register2.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/activity_send_password.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/fragment_stores.xml" value="0.12952898550724637" />
       </map>
     </option>
   </component>

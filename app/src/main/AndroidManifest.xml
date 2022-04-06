@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GiffyTasks">
         <activity
+            android:name=".invite"
+            android:exported="false" />
+        <activity
+            android:name=".my_group"
+            android:exported="false" />
+        <activity
+            android:name=".my_list"
+            android:exported="false" />
+        <activity
+            android:name=".messages"
+            android:exported="false" />
+        <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
             android:name=".NavigationActivity"
             android:exported="false"
             android:label="@string/title_activity_navigation" />
