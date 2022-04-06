@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@color/blue"
         android:orientation="vertical">
@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
             android:fontFamily="@font/rubik_bold"
             android:text="@string/filter"
             android:textColor="@color/white"
@@ -30,43 +31,67 @@
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:background="@drawable/border_yellow"
+            android:buttonTint="@color/yellow"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/relevance"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <CheckBox
             android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:background="@drawable/border_yellow"
+            android:buttonTint="@color/yellow"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/low_price"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <CheckBox
             android:id="@+id/checkBox3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:background="@drawable/border_yellow"
+            android:buttonTint="@color/yellow"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/high_price"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <CheckBox
             android:id="@+id/checkBox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:background="@drawable/border_yellow"
+            android:buttonTint="@color/yellow"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/interest_free"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <CheckBox
             android:id="@+id/checkBox5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:background="@drawable/border_yellow"
+            android:buttonTint="@color/yellow"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/free_shipping"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <CheckBox
             android:id="@+id/checkBox7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:background="@drawable/border_yellow"
+            android:buttonTint="@color/yellow"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/discount"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <Button
