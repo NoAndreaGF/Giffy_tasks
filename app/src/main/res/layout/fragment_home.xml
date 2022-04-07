@@ -93,6 +93,7 @@
             android:src="@drawable/user_friend" />
 
         <ImageButton
+            android:id="@+id/foto_regalar"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
@@ -128,6 +129,7 @@
             android:textColor="@color/white"/>
 
         <TextView
+            android:id="@+id/nombre_regalar"
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="19dp"

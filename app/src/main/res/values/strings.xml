@@ -283,6 +283,7 @@
     <string name="friend6">ELIZA APODACA</string>
     <string name="friend7">DANIELLA SÁNCHEZ</string>
     <string name="friend8">SALMA</string>
+    <string name="amigos_list">LISTA DE AMIGOS</string>
 
     <string name="search_friend">Buscar amigos</string>
     <string name="invite">Invitar amigos</string>

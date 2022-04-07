@@ -1,12 +1,17 @@
 package equipo1.giffytasks.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import equipo1.giffytasks.*
 import equipo1.giffytasks.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -22,7 +27,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        val bin = FragmentHomeBinding.inflate(layoutInflater)
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
@@ -30,9 +35,40 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.olvido
-        homeViewModel.text.observe(viewLifecycleOwner) {
 
+        val textView1: TextView = binding.invite
+
+        textView.setOnClickListener{
+            val intent = Intent(this@HomeFragment.requireContext(), invite::class.java)
+            startActivity(intent)
         }
+
+        textView1.setOnClickListener{
+            val intent = Intent(this@HomeFragment.requireContext(), invite::class.java)
+            startActivity(intent)
+        }
+
+        val imagenview: ImageView = binding.rectangleMensaje
+
+        imagenview.setOnClickListener{
+            val intent = Intent(this@HomeFragment.requireContext(), messages::class.java)
+            startActivity(intent)
+        }
+
+        val imageButton: ImageButton = binding.fotoRegalar
+
+        imageButton.setOnClickListener{
+            val intent = Intent(this@HomeFragment.requireContext(), wishlist::class.java)
+            startActivity(intent)
+        }
+
+        val textView2: TextView = binding.nombreRegalar
+
+        textView2.setOnClickListener{
+            val intent = Intent(this@HomeFragment.requireContext(), wishlist::class.java)
+            startActivity(intent)
+        }
+
         return root
 
     }
