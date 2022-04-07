@@ -32,6 +32,8 @@
             android:src="@drawable/rectangle_ajustes" />
     </GridLayout>
 
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"

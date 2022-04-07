@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/first_gradient"
-    tools:context=".ui.home.StoresFragment">
+    tools:context=".ui.home.HomeFragment">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -16,6 +16,7 @@
         android:rowCount="1"
         android:columnCount="2"
         >
+
         <ImageView
             android:id="@+id/rectangle_mensaje"
             android:layout_width="wrap_content"
@@ -33,41 +34,297 @@
             android:src="@drawable/rectangle_ajustes" />
     </GridLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
     <TextView
         android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:text="@string/home_title"
         android:textColor="@color/white"
-        android:textSize="23dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/olvido"
-        android:layout_width="210dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="99dp"
-        android:layout_marginTop="0dp"
         android:fontFamily="@font/varela_round"
         android:gravity="center"
         android:text="@string/home_send_gift"
         android:textColor="@color/white"
-        android:textSize="18dp" />
+        android:textSize="14dp" />
 
-    <TextView
-        android:id="@+id/textHome"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center">
 
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rayo"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/gift_card"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text="@string/friend1"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text="@string/friend2"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/friend3"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text="@string/friend4"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text="@string/friend5"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_friend"/>
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend" />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_circle"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_friend" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/friend6"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text="@string/friend7"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text="@string/friend8"
+            android:fontFamily="@font/varela_round"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp">
+    <TextView
+        android:id="@+id/search_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/search_friend"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/invite"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/siguiente"
+                android:layout_width="310dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/varela_round"
+                android:gravity="center"
+                android:text="@string/gift_recommendation"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
