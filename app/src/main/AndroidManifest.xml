@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GiffyTasks">
         <activity
+            android:name=".about_us"
+            android:exported="false" />
+        <activity
+            android:name=".contact"
+            android:exported="false" />
+        <activity
             android:name=".invite"
             android:exported="false" />
         <activity
