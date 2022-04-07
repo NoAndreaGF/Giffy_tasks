@@ -1,6 +1,7 @@
 package equipo1.giffytasks
 
 import android.os.Bundle
+import android.view.Window
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -15,7 +16,7 @@ class NavigationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         binding = ActivityNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -26,10 +27,15 @@ class NavigationActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home,R.id.navigation_stores, R.id.navigation_calendar,R.id.navigation_notifications,R.id.navigation_profile
+                R.id.navigation_home,
+                R.id.navigation_stores,
+                R.id.navigation_calendar,
+                R.id.navigation_notifications,
+                R.id.navigation_profile
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 }
+
+
