@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/first_gradient"
+    tools:context=".list_friend">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10sp"
+                android:rowCount="1"
+                android:columnCount="2"
+                >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_mensaje"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/rectangle_ajustes" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/flores"
+                android:rowCount="2"
+                android:columnCount="1">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="120dp"
+                    android:layout_height="122dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:srcCompat="@drawable/fotoperfil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/friend2"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:gravity="center"
+                    />
+
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amigos_list"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:fontFamily="@font/rubik_bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:columnCount="3"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/camiseta"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALAN"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/juegos"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALAN"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/juguetes"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DANIELA"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/peluche"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ELISA"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/camiseta"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ERIKA"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/camiseta"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SALMA"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/camiseta"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALAN"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/juegos"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALAN"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/juguetes"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DANIELA"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

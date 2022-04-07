@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/first_gradient"
+    tools:context=".options">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10sp"
+        android:rowCount="1"
+        android:columnCount="2"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_mensaje"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/rectangle_ajustes" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/flores"
+        android:columnCount="1"
+        android:rowCount="2">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="120dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:srcCompat="@drawable/peluche" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="@string/friend2"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="1"
+        android:background="@color/yellow"
+        >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@color/teal_200"
+           >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/add_user"
+               android:textColor="@color/white"
+               android:textSize="20dp"
+               android:padding="5dp"
+               />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/teal_200"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_friend"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/teal_200"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notify_friend"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/teal_200"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_friend"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+    </GridLayout>
+
+</LinearLayout>
+
+<!--
+ <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:padding="10sp"
+            android:rowCount="1"
+            android:columnCount="2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_user"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha"
+                android:layout_gravity="right"
+                />
+        </GridLayout>
+-->

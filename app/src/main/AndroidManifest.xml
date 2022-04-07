@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GiffyTasks.NoActionBar">
         <activity
+            android:name=".options"
+            android:exported="false" />
+        <activity
+            android:name=".list_friend"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_gift"
+            android:exported="false" />
+        <activity
+            android:name=".product"
+            android:exported="false" />
+        <activity
             android:name=".wishlist"
             android:exported="false" />
         <activity
