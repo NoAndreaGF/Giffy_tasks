@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/first_gradient"
     android:orientation="vertical"
-    tools:context=".quiz">
+    tools:context=".QuizPart2">
 
     <TextView
         android:id="@+id/titulo"
@@ -30,6 +30,15 @@
         android:text="@string/quizz_desc"
         android:textColor="@color/white"
         android:textSize="11dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -143,7 +152,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/red"
                 android:textSize="13dp"
-                app:backgroundTint="@color/red" />
+                android:backgroundTint="@color/red" />
 
             <Button
                 android:id="@+id/naranja"
@@ -155,7 +164,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/orange"
                 android:textSize="13dp"
-                app:backgroundTint="@color/orange" />
+                android:backgroundTint="@color/orange" />
 
             <Button
                 android:id="@+id/amarillo"
@@ -167,7 +176,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/yellow"
                 android:textSize="13dp"
-                app:backgroundTint="@color/yello2" />
+                android:backgroundTint="@color/yello2" />
 
         </LinearLayout>
 
@@ -185,7 +194,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/green"
                 android:textSize="13dp"
-                app:backgroundTint="@color/green" />
+                android:backgroundTint="@color/green" />
 
             <Button
                 android:id="@+id/azul"
@@ -197,7 +206,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/blue"
                 android:textSize="13dp"
-                app:backgroundTint="@color/blue2" />
+                android:backgroundTint="@color/blue2" />
 
             <Button
                 android:id="@+id/morado"
@@ -209,7 +218,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/purple"
                 android:textSize="13dp"
-                app:backgroundTint="@color/purple2" />
+                android:backgroundTint="@color/purple2" />
 
         </LinearLayout>
 
@@ -227,7 +236,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/brown"
                 android:textSize="13dp"
-                app:backgroundTint="@color/brown" />
+                android:backgroundTint="@color/brown" />
 
             <Button
                 android:id="@+id/negro"
@@ -239,7 +248,7 @@
                 android:paddingTop="2dp"
                 android:text="@string/black"
                 android:textSize="13dp"
-                app:backgroundTint="@color/black" />
+                android:backgroundTint="@color/black" />
 
             <Button
                 android:id="@+id/blanco"
@@ -252,7 +261,7 @@
                 android:text="@string/white"
                 android:textColor="@color/blue"
                 android:textSize="13dp"
-                app:backgroundTint="@color/white" />
+                android:backgroundTint="@color/white" />
 
         </LinearLayout>
 
@@ -393,5 +402,6 @@
         android:fontFamily="@font/varela_round"
         android:text="@string/next_2"
         android:textSize="15dp" />
-
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

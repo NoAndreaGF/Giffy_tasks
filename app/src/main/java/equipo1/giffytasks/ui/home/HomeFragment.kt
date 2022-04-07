@@ -22,6 +22,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
@@ -33,6 +34,7 @@ class HomeFragment : Fragment() {
 
         }
         return root
+
     }
 
     override fun onDestroyView() {
