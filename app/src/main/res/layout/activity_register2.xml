@@ -18,7 +18,8 @@
         android:fontFamily="@font/varela_round"
         android:inputType="textPersonName"
         android:paddingLeft="15dip"
-        android:text="@string/name_last_name"
+        android:hint="@string/name_last_name"
+        android:autofillHints="@string/name_last_name"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -30,9 +31,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:paddingLeft="15dip"
-        android:text="@string/age"
+        android:hint="@string/age"
+        android:autofillHints="@string/age"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -44,9 +46,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="textCapSentences"
         android:paddingLeft="15dip"
-        android:text="@string/gender"
+        android:hint="@string/gender"
+        android:autofillHints="@string/gender"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -58,9 +61,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:paddingLeft="15dip"
-        android:text="@string/country"
+        android:hint="@string/country"
+        android:autofillHints="@string/country"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -72,9 +76,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:paddingLeft="15dip"
-        android:text="@string/language"
+        android:hint="@string/language"
+        android:autofillHints="@string/language"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -86,9 +91,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:paddingLeft="15dip"
-        android:text="@string/phone"
+        android:hint="@string/phone"
+        android:autofillHints="@string/phone"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -100,9 +106,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:paddingLeft="15dip"
-        android:text="@string/address"
+        android:hint="@string/address"
+        android:autofillHints="@string/address"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
@@ -114,9 +121,10 @@
         android:layout_marginTop="30dp"
         android:background="@color/white"
         android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
+        android:inputType="textPostalAddress"
         android:paddingLeft="15dip"
-        android:text="@string/zip_code"
+        android:hint="@string/zip_code"
+        android:autofillHints="@string/zip_code"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 

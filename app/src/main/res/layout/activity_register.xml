@@ -8,7 +8,7 @@
     tools:context=".register">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btSignup"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_x="62dp"
@@ -19,7 +19,7 @@
         android:textSize="15dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etEmail"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_weight="1"
@@ -29,12 +29,13 @@
         android:fontFamily="@font/varela_round"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dip"
-        android:text="@string/mail"
+        android:autofillHints="@string/mail"
+        android:hint="@string/mail"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etPassword"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_marginTop="200dp"
@@ -45,12 +46,13 @@
         android:fontFamily="@font/varela_round"
         android:inputType="textVisiblePassword"
         android:paddingLeft="15dip"
-        android:text="@string/password"
+        android:autofillHints="@string/password"
+        android:hint="@string/password"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etRepeatPassword"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_weight="1"
@@ -60,7 +62,8 @@
         android:fontFamily="@font/varela_round"
         android:inputType="textVisiblePassword"
         android:paddingLeft="15dip"
-        android:text="@string/password_confirm"
+        android:autofillHints="@string/password_confirm"
+        android:hint="@string/password_confirm"
         android:textColor="@color/gray"
         android:textSize="12dp" />
 
