@@ -70,4 +70,5 @@
         android:gravity="center"
         android:text="@string/register"
         android:textSize="15dp" />
+
 </LinearLayout>
