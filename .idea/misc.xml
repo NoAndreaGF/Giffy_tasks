@@ -63,6 +63,8 @@
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/drawable/noround_buttonyellow.xml" value="0.2595" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/drawable/round_button.xml" value="0.1915" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/drawable/round_yellow.xml" value="0.2595" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_about_us.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_event_view.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_filter.xml" value="0.4" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
@@ -78,8 +80,10 @@
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_send_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/app_bar_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/content_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/fragment_calendar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/fragment_slideshow.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/nav_header_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/menu/activity_main_drawer.xml" value="0.21041666666666667" />

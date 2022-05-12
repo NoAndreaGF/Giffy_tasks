@@ -4,337 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/first_gradient"
+    android:orientation="vertical"
     tools:context=".ui.calendar.CalendarFragment">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/titulo2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="@string/calendar"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="364dp"
+            android:layout_marginTop="40dp"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalenderViewCustom"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/titulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/rubik_bold"
-                android:gravity="center"
-                android:text="@string/calendar"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/date"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+    <EditText
+        android:id="@+id/camiseta"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:fontFamily="@font/varela_round"
+        android:inputType="text"
+        android:paddingLeft="15dip"
+        android:hint="@string/nameEvent"
+        android:textColor="@color/gray"
+        android:textSize="12dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="150dp"
-                    android:fontFamily="@font/rubik_bold"
-                    android:text="ENERO"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/rectangle_ajustes_blanco" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="100dp"
-                    android:src="@drawable/rectangle_sincronizar" />
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/blue"
-                android:text="     L       M       M       J       V       S       D"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="                                                      1       2"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="     3       4        5        6       7       8       9"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    10     11      12     13    14     15     16"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    17     18      19     20    21     22     23"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    24     25      26     27    28     29     30"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    31"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/rubik_bold"
-                    android:text="FEBRERO"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/rectangle_ajustes_blanco" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/blue"
-                android:text="     L       M       M       J      V       S       D"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="              1        2        3       4       5       6"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="     7       8       9       10     11      12     13"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    14     15     16     17     18      19     20"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    21     22     23     24     25      26     27"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/rubik_bold"
-                    android:text="MARZO"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/rectangle_ajustes_blanco" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/blue"
-                android:text="     L       M       M       J      V       S       D"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="              1        2        3       4       5       6"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="     7       8       9       10     11      12     13"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    14     15     16     17     18      19     20"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    21     22     23     24     25      26     27"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/rubik_bold"
-                    android:text="ABRIL"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/rectangle_ajustes_blanco" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/blue"
-                android:text="     L       M       M       J      V       S       D"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="              1        2        3       4       5       6"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="     7       8       9       10     11      12     13"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    14     15     16     17     18      19     20"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="    21     22     23     24     25      26     27"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:layout_marginBottom="100dp"/>
-
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="310dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/noround_button"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textSize="15dp" />
 </LinearLayout>
