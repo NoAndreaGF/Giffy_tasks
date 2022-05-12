@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29631199798",
+    "project_id": "giffy-tasks",
+    "storage_bucket": "giffy-tasks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29631199798:android:5cccc918ac85366b42b697",
+        "android_client_info": {
+          "package_name": "equipo1.giffytasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29631199798-5rp6oi1kkct1snnfdb9j9tqdussu75n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4ApHpDr0qex_jD_TgUZJa7OJGoCDvDhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29631199798-5rp6oi1kkct1snnfdb9j9tqdussu75n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

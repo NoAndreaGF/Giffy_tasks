@@ -3,30 +3,70 @@ package equipo1.giffytasks
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import equipo1.giffytasks.databinding.ActivityLoginBinding
 
 class login : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
+    private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
 
-        val button: Button = findViewById(R.id.siguiente)
-        val olvido: TextView = findViewById(R.id.olvido)
-        val registro: TextView = findViewById(R.id.registro)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        button.setOnClickListener{
-            var intent: Intent = Intent(this,NavigationActivity::class.java)
+        // Initialize Firebase Auth
+        auth = Firebase.auth
+
+        binding.login.setOnClickListener{
+            val mEmail = binding.etCorreo.text.toString()
+            val mPassword = binding.etPassword.text.toString()
+
+            when {
+                mEmail.isEmpty() || mPassword.isEmpty()->{
+                    Toast.makeText(baseContext, "Ingrese Correo y contraseña.",
+                        Toast.LENGTH_SHORT).show()
+                } else ->{
+                SignIn(mEmail, mPassword)
+            }
+            }
+        }
+        binding.registro.setOnClickListener{
+            val intent = Intent(this, register::class.java)
             startActivity(intent)
         }
-        olvido.setOnClickListener{
-            var intent: Intent = Intent(this,forgot_password::class.java)
-            startActivity(intent)
-        }
-        registro.setOnClickListener{
-            var intent: Intent = Intent(this,register::class.java)
-            startActivity(intent)
-        }
 
+    }
+
+    private fun SignIn(email: String, password: String) {
+        // we are using Google, Email-Password, and Phone Number based authentication
+
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+                    Log.d("TAG", "signInWithEmail:success")
+                    val user = auth.currentUser
+                    // updateUI(user)
+                    readload()
+                } else {
+                    // If sign in fails, display a message to the user.
+                    Log.w("TAG", "signInWithEmail:failure", task.exception)
+                    Toast.makeText(baseContext, "Correo o contraseña incorrectos.",
+                        Toast.LENGTH_SHORT).show()
+                    // updateUI(null)
+                }
+            }
+    }
+
+    private fun readload() {
+        val intent = Intent(this, NavigationActivity::class.java)
+        this.startActivity(intent)
     }
 }

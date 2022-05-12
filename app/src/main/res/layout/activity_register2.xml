@@ -8,147 +8,167 @@
     android:orientation="vertical"
     tools:context=".register2">
 
-    <EditText
-        android:id="@+id/nombre"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="textPersonName"
-        android:paddingLeft="15dip"
-        android:hint="@string/name_last_name"
-        android:autofillHints="@string/name_last_name"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/edad"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="number"
-        android:paddingLeft="15dip"
-        android:hint="@string/age"
-        android:autofillHints="@string/age"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/sexo"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="textCapSentences"
-        android:paddingLeft="15dip"
-        android:hint="@string/gender"
-        android:autofillHints="@string/gender"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+            <ImageView
+                android:id="@+id/iv_perfil"
+                android:layout_width="120dp"
+                android:layout_height="122dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:srcCompat="@drawable/fotoperfil" />
 
-    <EditText
-        android:id="@+id/pais"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="text"
-        android:paddingLeft="15dip"
-        android:hint="@string/country"
-        android:autofillHints="@string/country"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/name_last_name"
+                android:hint="@string/name_last_name"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
 
-    <EditText
-        android:id="@+id/idioma"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="text"
-        android:paddingLeft="15dip"
-        android:hint="@string/language"
-        android:autofillHints="@string/language"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+            <EditText
+                android:id="@+id/et_edad"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/age"
+                android:hint="@string/age"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
 
-    <EditText
-        android:id="@+id/telefono"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="phone"
-        android:paddingLeft="15dip"
-        android:hint="@string/phone"
-        android:autofillHints="@string/phone"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+            <EditText
+                android:id="@+id/et_sexo"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/gender"
+                android:hint="@string/gender"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
 
-    <EditText
-        android:id="@+id/dom"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="text"
-        android:paddingLeft="15dip"
-        android:hint="@string/address"
-        android:autofillHints="@string/address"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+            <EditText
+                android:id="@+id/et_pais"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/country"
+                android:hint="@string/country"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
 
-    <EditText
-        android:id="@+id/cp"
-        android:layout_width="280dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:fontFamily="@font/varela_round"
-        android:inputType="textPostalAddress"
-        android:paddingLeft="15dip"
-        android:hint="@string/zip_code"
-        android:autofillHints="@string/zip_code"
-        android:textColor="@color/gray"
-        android:textSize="12dp" />
+            <EditText
+                android:id="@+id/et_idioma"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/language"
+                android:hint="@string/language"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
 
-    <Button
-        android:id="@+id/siguiente"
-        android:layout_width="280dp"
-        android:layout_height="38dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/noround_button"
-        android:fontFamily="@font/varela_round"
-        android:text="@string/next"
-        android:textSize="15dp" />
+            <EditText
+                android:id="@+id/et_telefono"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/phone"
+                android:hint="@string/phone"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
 
-    <TextView
-        android:id="@+id/texto"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="99dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/varela_round"
-        android:gravity="center"
-        android:text="@string/quizz_desc"
-        android:textColor="@color/white"
-        android:textSize="11dp" />
+            <EditText
+                android:id="@+id/et_dom"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/address"
+                android:hint="@string/address"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/et_cp"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:fontFamily="@font/varela_round"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dip"
+                android:autofillHints="@string/zip_code"
+                android:hint="@string/zip_code"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/siguiente"
+                android:layout_width="280dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/noround_button"
+                android:fontFamily="@font/varela_round"
+                android:text="@string/next"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/varela_round"
+                android:gravity="center"
+                android:text="@string/quizz_desc"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

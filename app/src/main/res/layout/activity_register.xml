@@ -8,7 +8,7 @@
     tools:context=".register">
 
     <Button
-        android:id="@+id/btSignup"
+        android:id="@+id/signup"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_x="62dp"
@@ -19,7 +19,7 @@
         android:textSize="15dp" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/et_correo"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_weight="1"
@@ -35,7 +35,7 @@
         android:textSize="12dp" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/et_password"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_marginTop="200dp"
@@ -52,7 +52,7 @@
         android:textSize="12dp" />
 
     <EditText
-        android:id="@+id/etRepeatPassword"
+        android:id="@+id/et_passwordVerif"
         android:layout_width="280dp"
         android:layout_height="42dp"
         android:layout_weight="1"
