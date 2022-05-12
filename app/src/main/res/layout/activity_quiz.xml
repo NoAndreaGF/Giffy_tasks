@@ -59,11 +59,13 @@
             android:textSize="18dp" />
 
         <LinearLayout
+            android:id="@+id/rg_ques1row1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/musica"
+                android:id="@+id/btn_musica"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -74,18 +76,19 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/dibujar"
+                android:id="@+id/btn_dibujar"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
+                android:backgroundTint="@color/yellow"
                 android:background="@drawable/round_button"
                 android:paddingTop="2dp"
                 android:text="@string/drawing"
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/leer"
+                android:id="@+id/btn_leer"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -94,6 +97,8 @@
                 android:paddingTop="2dp"
                 android:text="@string/reading"
                 android:textSize="13dp" />
+
+
         </LinearLayout>
 
         <LinearLayout
