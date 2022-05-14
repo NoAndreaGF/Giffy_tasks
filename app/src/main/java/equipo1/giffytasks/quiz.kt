@@ -27,9 +27,13 @@ class quiz : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
+        val uid = auth.currentUser?.uid
+
         // Colors
         val black = resources.getColor(R.color.black, theme)
         val white = resources.getColor(R.color.white, theme)
+
+        recoverQuiz(uid, black)
 
         // Questions
         var respuesta1 = "empty"
@@ -55,6 +59,7 @@ class quiz : AppCompatActivity() {
                 bailar, white)
             musica.setTextColor(black)
             respuesta1 = "musica"
+
         }
         dibujar.setOnClickListener {
             question1(musica, dibujar, leer, deporte, cocinar, peliculas, jardineria, otro,
@@ -211,6 +216,25 @@ class quiz : AppCompatActivity() {
                 respuesta4_p = mPantalon
                 respuesta4_z = mZapatos
                 fillQuiz(respuesta1, respuesta2, respuesta3, respuesta4_c, respuesta4_p, respuesta4_z)
+            }
+        }
+
+    }
+
+    private fun recoverQuiz(uid: String?, black: Int) {
+        var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        if (uid != null) {
+            databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
+                if (task.exists()) {
+                    val hobbie = task.child("hobbie").value.toString()
+                    if (hobbie.equals("cocinar")) {
+                        binding.btnCocinar.setTextColor(black)
+                    }
+                    //binding.profileName.text = nombre.toString()
+                } else {
+                    Toast.makeText(this, "No se recupero el usuario.",
+                        Toast.LENGTH_SHORT).show()
+                }
             }
         }
 

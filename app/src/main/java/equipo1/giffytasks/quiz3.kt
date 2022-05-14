@@ -175,9 +175,9 @@ class quiz3 : AppCompatActivity() {
             val mModelo = binding.etModelo.text.toString()
             val mExtra = binding.etAlgomas.text.toString()
 
-            if (!mModelo.isEmpty()) {
+            if (!(mModelo.isEmpty())) {
                 respuesta9 = mModelo
-            } else if (!mExtra.isEmpty()) {
+            } else if (!(mExtra.isEmpty())) {
                 respuesta14 = mExtra
             }   else if (respuesta10.equals("empty")) {
                 Toast.makeText(this, "Seleccione un tipo de regalo.",

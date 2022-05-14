@@ -42,13 +42,18 @@
         android:scaleType="fitXY"
         android:src="@drawable/fondoportada" />
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_perfil"
         android:layout_width="120dp"
         android:layout_height="122dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="65dp"
-        app:shapeAppearanceOverlay="@style/circleImageView"
-        app:srcCompat="@drawable/fotoperfil" />
+        android:src="@drawable/fotoperfil"
+        app:civ_border_color="#FF000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/profile_name"

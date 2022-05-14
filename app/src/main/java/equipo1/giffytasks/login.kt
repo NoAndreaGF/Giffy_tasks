@@ -52,21 +52,19 @@ class login : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("TAG", "signInWithEmail:success")
-                    val user = auth.currentUser
-                    // updateUI(user)
                     readload()
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w("TAG", "signInWithEmail:failure", task.exception)
                     Toast.makeText(baseContext, "Correo o contraseña incorrectos.",
                         Toast.LENGTH_SHORT).show()
-                    // updateUI(null)
                 }
             }
     }
 
     private fun readload() {
         val intent = Intent(this, NavigationActivity::class.java)
+        //intent.putExtra("user", user)
         this.startActivity(intent)
     }
 }

@@ -32,8 +32,11 @@ class register2 : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
+        var imagenSelec = false
+
         binding.ivPerfil.setOnClickListener {
             pickImageGallery()
+            imagenSelec = true
         }
 
         binding.siguiente.setOnClickListener {
@@ -70,6 +73,9 @@ class register2 : AppCompatActivity() {
             } else if (mCP.isEmpty()) {
                 Toast.makeText(this, "Ingrese un código postal valido.",
                     Toast.LENGTH_SHORT).show()
+            } else if (!imagenSelec) {
+                Toast.makeText(this, "Ingrese una imagen.",
+                    Toast.LENGTH_SHORT).show()
             } else {
                 uploadPic()
                 fillProfile(mNombre, mEdad, mSexo, mPais, mIdioma, mTel, mDom, mCP)
@@ -79,7 +85,7 @@ class register2 : AppCompatActivity() {
     }
 
     private fun pickImageGallery() {
-        val intent = Intent(Intent.ACTION_PICK)
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
         startActivityForResult(intent, 100)
     }
@@ -117,6 +123,20 @@ class register2 : AppCompatActivity() {
         val formatter = SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.getDefault())
         val now = Date()
         val fileName = formatter.format(now)
+        val storageReference = FirebaseStorage.getInstance().getReference("image/" + auth.currentUser?.uid)
+
+        storageReference.putFile(imageUri).
+        addOnSuccessListener {
+        } .addOnFailureListener {
+            Toast.makeText(baseContext, "Imagen no subida.",
+                Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    /**private fun uploadPic() {
+        val formatter = SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.getDefault())
+        val now = Date()
+        val fileName = formatter.format(now)
         val storageReference = FirebaseStorage.getInstance().getReference("image/$fileName")
 
         storageReference.putFile(imageUri).
@@ -127,5 +147,5 @@ class register2 : AppCompatActivity() {
             Toast.makeText(baseContext, "Imagen no subida.",
                 Toast.LENGTH_SHORT).show()
         }
-    }
+    }**/
 }
