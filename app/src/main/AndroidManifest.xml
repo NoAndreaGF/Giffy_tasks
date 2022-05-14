@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GiffyTasks.NoActionBar">
         <activity
+            android:name=".quiz2"
+            android:exported="false" />
+        <activity
             android:name=".options"
             android:exported="false" />
         <activity

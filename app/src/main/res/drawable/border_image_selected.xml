@@ -4,11 +4,11 @@
     tools:ignore="MissingDefaultResource">
     <stroke
         android:width="5dp"
-        android:color="@color/blue" />
+        android:color="@color/white" />
 
     <gradient
-        android:centerColor="@color/blue"
-        android:endColor="@color/blue"
-        android:startColor="@color/blue" />
+        android:centerColor="@color/white"
+        android:endColor="@color/white"
+        android:startColor="@color/white" />
     <corners android:radius="8dp" />
 </shape>

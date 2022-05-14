@@ -60,16 +60,17 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/modelo"
+            android:id="@+id/et_modelo"
             android:layout_width="280dp"
             android:layout_height="35dp"
             android:layout_marginLeft="62dp"
             android:layout_marginTop="5dp"
             android:background="@color/white"
             android:fontFamily="@font/varela_round"
-            android:inputType="textPersonName"
+            android:inputType="textNoSuggestions"
             android:paddingLeft="15dip"
-            android:text="@string/write"
+            android:autofillHints="@string/write"
+            android:hint="@string/write"
             android:textColor="@color/gray"
             android:textSize="12dp" />
 
@@ -89,7 +90,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/accion"
+                android:id="@+id/btn_accion"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -100,18 +101,18 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/ficcion"
+                android:id="@+id/btn_fantasia"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/round_button"
                 android:paddingTop="2dp"
-                android:text="@string/fiction"
+                android:text="@string/FANTASIA"
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/ciencia"
+                android:id="@+id/btn_ciencia"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -127,7 +128,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/comedia"
+                android:id="@+id/btn_comedia"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -138,7 +139,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/romance"
+                android:id="@+id/btn_romance"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -149,7 +150,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/animadas"
+                android:id="@+id/btn_animadas"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -177,7 +178,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/regalo"
+                android:id="@+id/btn_regalo"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -189,7 +190,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/dinero"
+                android:id="@+id/btn_dinero"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -218,7 +219,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/starwars"
+                android:id="@+id/btn_starwars"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -229,7 +230,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/marvel"
+                android:id="@+id/btn_marvel"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -240,7 +241,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/dc"
+                android:id="@+id/btn_dc"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -257,7 +258,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/harryPotter"
+                android:id="@+id/btn_harryPotter"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -265,10 +266,10 @@
                 android:background="@drawable/round_button"
                 android:paddingTop="2dp"
                 android:text="@string/harry_potter"
-                android:textSize="13dp" />
+                android:textSize="10dp" />
 
             <Button
-                android:id="@+id/nintendo"
+                android:id="@+id/btn_nintendo"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -279,7 +280,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/disney"
+                android:id="@+id/btn_disney"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -296,7 +297,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/wwe"
+                android:id="@+id/btn_wwe"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -307,7 +308,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/simpson"
+                android:id="@+id/btn_simpson"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -319,7 +320,7 @@
                 android:textSize="10dp" />
 
             <Button
-                android:id="@+id/silent_hill"
+                android:id="@+id/btn_silent_hill"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -348,7 +349,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/ropa"
+                android:id="@+id/btn_ropa"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -359,7 +360,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/comida"
+                android:id="@+id/btn_comida"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -370,7 +371,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/juguetes"
+                android:id="@+id/btn_juguetes"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -393,16 +394,17 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/algomas"
+            android:id="@+id/et_algomas"
             android:layout_width="280dp"
             android:layout_height="35dp"
             android:layout_marginLeft="62dp"
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:fontFamily="@font/varela_round"
-            android:inputType="textPersonName"
+            android:inputType="textNoSuggestions"
             android:paddingLeft="15dip"
-            android:text="@string/write"
+            android:autofillHints="@string/write"
+            android:hint="@string/write"
             android:textColor="@color/gray"
             android:textSize="12dp" />
     </LinearLayout>

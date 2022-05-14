@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/first_gradient"
     android:orientation="vertical"
-    tools:context=".QuizPart2">
+    tools:context=".quiz2">
 
     <TextView
         android:id="@+id/titulo"
@@ -40,368 +40,371 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="560dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/round_yellow"
-        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="560dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_yellow"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/pregunta1"
-            android:layout_width="309dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question5"
-            android:textColor="@color/purple"
-            android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/pregunta1"
+                    android:layout_width="309dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/question5"
+                    android:textColor="@color/purple"
+                    android:textSize="18dp" />
 
-        <Button
-            android:id="@+id/question5_answer1"
-            android:layout_width="332dp"
-            android:layout_height="38dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/noround_button"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question5_answer1"
-            android:textSize="12dp" />
+                <Button
+                    android:id="@+id/btn_regalos"
+                    android:layout_width="332dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/noround_button"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/question5_answer1"
+                    android:textSize="12dp" />
 
-        <Button
-            android:id="@+id/question5_answer2"
-            android:layout_width="333dp"
-            android:layout_height="38dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/noround_button"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question5_answer2"
-            android:textSize="12dp" />
+                <Button
+                    android:id="@+id/btn_comida"
+                    android:layout_width="333dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/noround_button"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/question5_answer2"
+                    android:textSize="12dp" />
 
-        <TextView
-            android:id="@+id/pregunta2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question6"
-            android:textColor="@color/purple"
-            android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/pregunta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/question6"
+                    android:textColor="@color/purple"
+                    android:textSize="18dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
-            <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="9dp"
-                android:background="@drawable/border_image"
-                android:padding="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/flores" />
+                    <ImageButton
+                        android:id="@+id/btn_flores"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="9dp"
+                        android:background="@drawable/border_image"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/flores" />
 
-            <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="19dp"
-                android:background="@drawable/border_image"
-                android:padding="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/cubos" />
+                    <ImageButton
+                        android:id="@+id/btn_figuras"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="19dp"
+                        android:background="@drawable/border_image"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cubos" />
 
-            <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="19dp"
-                android:background="@drawable/border_image"
-                android:padding="10dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/confeti" />
-        </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/btn_puntos"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="19dp"
+                        android:background="@drawable/border_image"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/confeti" />
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/pregunta3"
-            android:layout_width="309dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="39dp"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question7"
-            android:textColor="@color/purple"
-            android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/pregunta3"
+                    android:layout_width="309dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/question7"
+                    android:textColor="@color/purple"
+                    android:textSize="18dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_rojo"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/red"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/red" />
+
+                    <Button
+                        android:id="@+id/btn_naranja"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/orange"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/orange" />
+
+                    <Button
+                        android:id="@+id/btn_amarillo"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/yellow"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/yello2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_verde"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/green"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/green" />
+
+                    <Button
+                        android:id="@+id/btn_azul"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/blue"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/blue2" />
+
+                    <Button
+                        android:id="@+id/btn_morado"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/purple"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/purple2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_cafe"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/brown"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/brown" />
+
+                    <Button
+                        android:id="@+id/btn_negro"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/black"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/black" />
+
+                    <Button
+                        android:id="@+id/btn_blanco"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/white"
+                        android:textSize="13dp"
+                        android:backgroundTint="@color/black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pregunta4"
+                    android:layout_width="309dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/question8"
+                    android:textColor="@color/purple"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_chocolate"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/chocolate"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_gomitas"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/gummies"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_chicles"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/gum"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_caramelos"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/caramels"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_chile"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/chile"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_frutas"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/fruits"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_tipicos"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/typical"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_artesanal"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/handmade"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_rellenos"
+                        android:layout_width="118dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_button"
+                        android:paddingTop="2dp"
+                        android:text="@string/filled"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+            </LinearLayout>
 
             <Button
-                android:id="@+id/ninguna"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/red"
-                android:textSize="13dp"
-                android:backgroundTint="@color/red" />
-
-            <Button
-                android:id="@+id/naranja"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/orange"
-                android:textSize="13dp"
-                android:backgroundTint="@color/orange" />
-
-            <Button
-                android:id="@+id/amarillo"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/yellow"
-                android:textSize="13dp"
-                android:backgroundTint="@color/yello2" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/verde"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/green"
-                android:textSize="13dp"
-                android:backgroundTint="@color/green" />
-
-            <Button
-                android:id="@+id/azul"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/blue"
-                android:textSize="13dp"
-                android:backgroundTint="@color/blue2" />
-
-            <Button
-                android:id="@+id/morado"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/purple"
-                android:textSize="13dp"
-                android:backgroundTint="@color/purple2" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/cafe"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/brown"
-                android:textSize="13dp"
-                android:backgroundTint="@color/brown" />
-
-            <Button
-                android:id="@+id/negro"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/black"
-                android:textSize="13dp"
-                android:backgroundTint="@color/black" />
-
-            <Button
-                android:id="@+id/blanco"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/white"
-                android:textColor="@color/blue"
-                android:textSize="13dp"
-                android:backgroundTint="@color/white" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/pregunta4"
-            android:layout_width="309dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question8"
-            android:textColor="@color/purple"
-            android:textSize="18dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/chocolate"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/chocolate"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/gomitas"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/gummies"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/chicles"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/gum"
-                android:textSize="13dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/caramelos"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/caramels"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/chile"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/chile"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/frutas"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/fruits"
-                android:textSize="13dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/tipicos"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/typical"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/artesanal"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/handmade"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/rellenos"
-                android:layout_width="118dp"
-                android:layout_height="32dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_button"
-                android:paddingTop="2dp"
-                android:text="@string/filled"
-                android:textSize="13dp" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/siguiente"
-        android:layout_width="280dp"
-        android:layout_height="38dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/noround_button"
-        android:fontFamily="@font/varela_round"
-        android:text="@string/next_2"
-        android:textSize="15dp" />
+                android:id="@+id/siguiente"
+                android:layout_width="280dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/noround_button"
+                android:fontFamily="@font/varela_round"
+                android:text="@string/next_2"
+                android:textSize="15dp" />
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

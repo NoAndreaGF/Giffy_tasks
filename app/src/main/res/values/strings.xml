@@ -57,7 +57,7 @@
     <string name="quizz_title">QUIZ DEL REGALO PERFECTO</string>
     <string name="quizz_desc">Toda la información que proporcionas está protegida, únicamente tus amigos podrán verla.</string>
 
-    <string name="question1">1. Selecciona tus hobbies.</string>
+    <string name="question1">1. Selecciona tu hobbie.</string>
     <string name="music">MÚSICA</string>
     <string name="drawing">DIBUJAR</string>
     <string name="reading">LEER</string>
@@ -90,12 +90,12 @@
     <string name="shoes">ZAPATOS</string>
 
     <string name="question5">5. ¿Eres de flores o de chocolate?</string>
-    <string name="question5_answer1">Prefiero que me regalen cosas</string>
-    <string name="question5_answer2">Prefiero que me regalen comida</string>
+    <string name="question5_answer1">Prefiero que me regalen flores</string>
+    <string name="question5_answer2">Prefiero que me regalen chocolate</string>
 
     <string name="question6">6. Elige el estampado que más te guste.</string>
 
-    <string name="question7">7. Selecciona tus colores favoritos.</string>
+    <string name="question7">7. Selecciona tu color favorito.</string>
     <string name="red">ROJO</string>
     <string name="orange">NARANJA</string>
     <string name="yellow">AMARILLO</string>
@@ -106,7 +106,7 @@
     <string name="black">NEGRO</string>
     <string name="white">BLANCO</string>
 
-    <string name="question8">8. Selecciona tus dulces favoritos.</string>
+    <string name="question8">8. Selecciona tu sabor de dulces favoritos.</string>
     <string name="chocolate">CHOCOLATE</string>
     <string name="gummies">GOMITAS</string>
     <string name="gum">CHICLES</string>
@@ -121,8 +121,8 @@
 
     <string name="question10">10. ¿Qué género de películas te gustan?</string>
     <string name="action">ACCIÓN</string>
-    <string name="fiction">FICCIÓN</string>
-    <string name="scifi">CIENCIA FICCIÓN</string>
+    <string name="FANTASIA">FANTASÍA</string>
+    <string name="scifi">SCI-FI</string>
     <string name="comedy">COMEDIA</string>
     <string name="romance">ROMANCE</string>
     <string name="animated">ANIMADAS</string>

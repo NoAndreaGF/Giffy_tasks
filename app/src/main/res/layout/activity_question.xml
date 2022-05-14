@@ -21,7 +21,7 @@
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_quiz"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_marginLeft="62dp"
@@ -33,7 +33,7 @@
         android:textSize="15dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_noquiz"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_marginLeft="62dp"

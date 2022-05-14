@@ -59,7 +59,6 @@
             android:textSize="18dp" />
 
         <LinearLayout
-            android:id="@+id/rg_ques1row1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -106,7 +105,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/deporte"
+                android:id="@+id/btn_deporte"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -117,7 +116,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/cocinar"
+                android:id="@+id/btn_cocinar"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -128,7 +127,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/peliculas"
+                android:id="@+id/btn_peliculas"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -144,7 +143,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/jardineria"
+                android:id="@+id/btn_jardineria"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -155,7 +154,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/otro"
+                android:id="@+id/btn_otro"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -166,7 +165,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/bailar"
+                android:id="@+id/btn_bailar"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -193,7 +192,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/mexicana"
+                android:id="@+id/btn_mexicana"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -204,7 +203,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/italiana"
+                android:id="@+id/btn_italiana"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -215,7 +214,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/china"
+                android:id="@+id/btn_china"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -231,7 +230,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/espaniola"
+                android:id="@+id/btn_espaniola"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -242,7 +241,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/suiza"
+                android:id="@+id/btn_suiza"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -253,7 +252,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/rapida"
+                android:id="@+id/btn_rapida"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -280,7 +279,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/ninguna"
+                android:id="@+id/btn_ninguna"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -291,7 +290,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/rap"
+                android:id="@+id/btn_rap"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -302,7 +301,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/pop"
+                android:id="@+id/btn_pop"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -318,7 +317,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/reggeaton"
+                android:id="@+id/btn_reggeaton"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="25dp"
@@ -329,7 +328,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/kpop"
+                android:id="@+id/btn_kpop"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -340,7 +339,7 @@
                 android:textSize="13dp" />
 
             <Button
-                android:id="@+id/rock"
+                android:id="@+id/btn_rock"
                 android:layout_width="118dp"
                 android:layout_height="32dp"
                 android:layout_marginLeft="5dp"
@@ -363,21 +362,22 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/camiseta"
+            android:id="@+id/et_camiseta"
             android:layout_width="310dp"
             android:layout_height="35dp"
             android:layout_marginLeft="39dp"
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:fontFamily="@font/varela_round"
-            android:inputType="textPersonName"
+            android:inputType="textNoSuggestions"
             android:paddingLeft="15dip"
-            android:text="@string/tshirt"
+            android:autofillHints="@string/tshirt"
+            android:hint="@string/tshirt"
             android:textColor="@color/gray"
             android:textSize="12dp" />
 
         <EditText
-            android:id="@+id/pantalon"
+            android:id="@+id/et_pantalon"
             android:layout_width="310dp"
             android:layout_height="35dp"
             android:layout_marginLeft="39dp"
@@ -386,21 +386,23 @@
             android:fontFamily="@font/varela_round"
             android:inputType="textPersonName"
             android:paddingLeft="15dip"
-            android:text="@string/pants"
+            android:autofillHints="@string/pants"
+            android:hint="@string/pants"
             android:textColor="@color/gray"
             android:textSize="12dp" />
 
         <EditText
-            android:id="@+id/nombre"
+            android:id="@+id/et_zapatos"
             android:layout_width="310dp"
             android:layout_height="35dp"
             android:layout_marginLeft="39dp"
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:fontFamily="@font/varela_round"
-            android:inputType="textPersonName"
+            android:inputType="textNoSuggestions"
             android:paddingLeft="15dip"
-            android:text="@string/shoes"
+            android:autofillHints="@string/shoes"
+            android:hint="@string/shoes"
             android:textColor="@color/gray"
             android:textSize="12dp" />
 
