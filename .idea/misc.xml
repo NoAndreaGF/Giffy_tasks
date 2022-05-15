@@ -122,6 +122,10 @@
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/nav_header_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/menu/activity_main_drawer.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/menu/home.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_quiz2.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_quiz3.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_quiz4.xml" value="0.33" />
       </map>
     </option>
   </component>

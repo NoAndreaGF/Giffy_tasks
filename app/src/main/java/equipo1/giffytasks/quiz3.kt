@@ -37,6 +37,10 @@ class quiz3 : AppCompatActivity() {
         var respuesta11 = "empty"
         var respuesta12 = "empty"
         var respuesta13 = "empty"
+        //regalos
+        var regalo10 = "empty"
+        var regalo11 = "empty"
+        var regalo12 = "empty"
 
         // Pregunta 10
         var accion = binding.btnAccion
@@ -50,31 +54,43 @@ class quiz3 : AppCompatActivity() {
             question10(accion, fantasia, scifi, comedia, romance, animadas, white)
             accion.setTextColor(black)
             respuesta10= "accion"
+            regalo10 = "https://www.amazon.com.mx/Br-Paquete-Rapidos-Furiosos-Blu-ray/dp/B09KP693D8/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1PECO7KGYS3VM&keywords=pel%C3%ADcula+de+accion&qid=1652582624&sprefix=pelicula+de+accion%2Caps%2C186&sr=8-2"
+
         }
         fantasia.setOnClickListener {
             question10(accion, fantasia, scifi, comedia, romance, animadas, white)
             fantasia.setTextColor(black)
             respuesta10= "fantasia"
+            regalo10 = "https://www.amazon.com.mx/BR-GAME-THRONES-S-8-Blu-ray/dp/B07YBRR446/ref=sr_1_11?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LMHZFTIW2Y9Q&keywords=pel%C3%ADcula+de+fantasia&qid=1652582640&sprefix=pel%C3%ADcula+de+fantasia%2Caps%2C177&sr=8-11"
+
         }
         scifi.setOnClickListener {
             question10(accion, fantasia, scifi, comedia, romance, animadas, white)
             scifi.setTextColor(black)
             respuesta10= "scifi"
+            regalo10= "https://www.amazon.com.mx/Avatar-pel%C3%ADcula-ciencia-pulgadas-enrollado/dp/B09WLVJJDF/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3BYF1IZSFTGZG&keywords=pel%C3%ADcula+de+ciencia+ficcion&qid=1652582676&sprefix=pel%C3%ADcula+de+ciencia+ficcion%2Caps%2C150&sr=8-3"
+
         }
         comedia.setOnClickListener {
             question10(accion, fantasia, scifi, comedia, romance, animadas, white)
             comedia.setTextColor(black)
             respuesta10= "comedia"
+            regalo10 = "https://www.amazon.com.mx/BIG-BANG-TEORY-S12-Blu-ray/dp/B07YBRHCVS/ref=sr_1_9?keywords=the+big+bang+theory&qid=1652582716&sprefix=the+big+ba%2Caps%2C158&sr=8-9"
+
         }
         romance.setOnClickListener {
             question10(accion, fantasia, scifi, comedia, romance, animadas, white)
             romance.setTextColor(black)
             respuesta10= "romance"
+            regalo10 = "https://www.amazon.com.mx/Yo-Antes-Ti-Emilia-Clarke/dp/B01JOM6UW6/ref=sr_1_17?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=39I6V0CRIQ1IZ&keywords=pel%C3%ADcula+de+romance&qid=1652582760&sprefix=pelicula+de+romance%2Caps%2C160&sr=8-17"
+
         }
         animadas.setOnClickListener {
             question10(accion, fantasia, scifi, comedia, romance, animadas, white)
             animadas.setTextColor(black)
             respuesta10= "animadas"
+            regalo10 = "https://www.amazon.com.mx/VILLANO-FAVORITO-BOXSET-blu_ray-Blu-ray/dp/B093J4FTS4/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3H0B58B4WJJKD&keywords=minions+dvd&qid=1652582786&sprefix=minions+dvd%2Caps%2C147&sr=8-1"
+
         }
 
         // Pregunta 11
@@ -85,11 +101,13 @@ class quiz3 : AppCompatActivity() {
             question11(regalo, dinero, white)
             regalo.setTextColor(black)
             respuesta11= "regalo"
+            regalo11 = "https://www.amazon.com.mx/Tarjeta-de-Regalo-Digital-Amazon-com-mx/dp/B07PMMFSPC/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2T3XT77B9ECZR&keywords=regalos&qid=1652582833&sprefix=regalo%2Caps%2C179&sr=8-1"
         }
         dinero.setOnClickListener {
             question11(regalo, dinero, white)
             dinero.setTextColor(black)
             respuesta11= "dinero"
+            regalo11 = "https://www.amazon.com.mx/Redlemon-Seguridad-Cerradura-Registradora-Almacenamiento/dp/B09F8M5H5H/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3BGZSCK82X14H&keywords=dinero&qid=1652582808&sprefix=dinero%2Caps%2C176&sr=8-2"
         }
 
         // Pregunta 12
@@ -107,46 +125,63 @@ class quiz3 : AppCompatActivity() {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             starWars.setTextColor(black)
             respuesta12= "starWars"
+            regalo12 = "https://www.amazon.com.mx/STAR-WARS-colecci%C3%B3n-Vintage-Juguete/dp/B09LVWTHDH/ref=sr_1_1?keywords=star+wars&qid=1652582868&sprefix=sta%2Caps%2C158&sr=8-1"
+
         }
         marvel.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             marvel.setTextColor(black)
             respuesta12= "marvel"
+            regalo12 = "https://www.amazon.com.mx/Marvel-Legends-Coleccionable-Defender-Accesorios/dp/B09PVDMJ1D/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AAJXM5TJ2JMF&keywords=marvel&qid=1652582901&sprefix=marvel%2Caps%2C160&sr=8-1"
+
         }
         dc.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             dc.setTextColor(black)
             respuesta12= "dc"
+            regalo12 = "https://www.amazon.com.mx/DC-Universe-Master-Figura-Superman/dp/B07WGHZMH1?ref_=ast_sto_dp&th=1&psc=1"
         }
         hp.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             hp.setTextColor(black)
             respuesta12= "harry_potter"
+            regalo12 = "https://www.amazon.com.mx/Harry-Potter-Box-Set-Books/dp/0545044251/ref=sr_1_2?keywords=harry+potter&qid=1652582985&sprefix=harr%2Cspecialty-aps%2C153&sr=8-2&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
+
         }
         nintendo.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             nintendo.setTextColor(black)
             respuesta12= "nintendo"
+            regalo12 = "https://www.amazon.com.mx/Nintendo-Consola-Switch-Neon-Version/dp/B07VGRJDFY/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=LBJ4ARPR0I7W&keywords=nintendo&qid=1652583009&sprefix=nintendo%2Caps%2C159&sr=8-1&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
+
         }
         disney.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             disney.setTextColor(black)
             respuesta12= "disney"
+            regalo12 = "https://www.amazon.com.mx/Disney-DCM-9-Mickey-Waffle-Maker/dp/B00QHUT7MO/ref=sr_1_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36YXYR37S1WAI&keywords=disney&qid=1652583028&sprefix=disney%2Caps%2C159&sr=8-6"
+
         }
         wwe.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             wwe.setTextColor(black)
             respuesta12= "wwe"
+            regalo12 = "https://www.amazon.com.mx/WWE-Elite-Collection-Action-Figure/dp/B09CFY7TC5/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=wwe&qid=1652583048&sr=8-1"
+
         }
         simpson.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             simpson.setTextColor(black)
             respuesta12= "los_simpson"
+            regalo12 = "https://www.amazon.com.mx/1738-185-Simpsons-Homero-Colecci%C3%B3n-Cer%C3%A1mica/dp/B09H8KP2RQ/ref=sr_1_6?keywords=los+simpsons&qid=1652583061&sprefix=los+simp%2Caps%2C180&sr=8-6"
+
         }
         silentHill.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             silentHill.setTextColor(black)
             respuesta12= "silent_hill"
+            regalo12 = "https://www.amazon.com.mx/Konami-Silent-Hill-Collection-PlayStation/dp/B0050SXAIG/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=27F6ABAHVK12P&keywords=silent+hill&qid=1652583084&sprefix=silent+hill%2Caps%2C177&sr=8-1"
+
         }
 
         // Pregunta 13
@@ -188,7 +223,8 @@ class quiz3 : AppCompatActivity() {
                 Toast.makeText(this, "Seleccione un tipo de dulce.",
                     Toast.LENGTH_SHORT).show()
             } else{
-                fillQuiz(respuesta9, respuesta10, respuesta11, respuesta12, respuesta13)
+                fillQuiz(respuesta9, respuesta10, respuesta11, respuesta12, respuesta13,
+                    regalo10, regalo11, regalo12)
             }
         }
 
@@ -230,9 +266,9 @@ class quiz3 : AppCompatActivity() {
     }
 
     private fun fillQuiz(pregunta9: String, pregunta10: String, pregunta11: String,
-                         pregunta12: String, pregunta13: String) {
+                         pregunta12: String, pregunta13: String, regalo10: String,
+                            regalo11: String, regalo12: String) {
         val uid = auth.currentUser?.uid
-
         databaseReference = FirebaseDatabase.getInstance().getReference("users")
 
         val taskMap: MutableMap<String, Any> = HashMap()
@@ -241,7 +277,23 @@ class quiz3 : AppCompatActivity() {
         taskMap["regalo_dinero"] = pregunta11
         taskMap["cultura_popular"] = pregunta12
         taskMap["no_gusta"] = pregunta13
+
+        val taskRegalo : MutableMap<String, Any> = HashMap()
+        taskRegalo["genero_peliculas"] = regalo10
+        taskRegalo["regalo_dinero"] = regalo11
+        taskRegalo["cultura_popular"] = regalo12
+
         if (uid != null) {
+            databaseReference.child("user").child(uid).child("regalos")
+                .updateChildren(taskRegalo).addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                       //todo bien
+                    } else {
+                        Toast.makeText(baseContext, "Fallo al registrar las respuestas.",
+                            Toast.LENGTH_SHORT).show()
+                    }
+                }
+
             databaseReference.child("user").child(uid).child("quiz")
                 .updateChildren(taskMap).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
