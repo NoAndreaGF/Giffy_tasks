@@ -475,7 +475,7 @@
     #Event view screen
     <string name="month">Mayo</string>
     <string name="event">Evento</string>
-    <string name="date">Fecha escogida</string>
+    <string name="date2">Fecha de tu evento</string>
     <string name="nameEvent">Nombre del evento</string>
     <string name="register">Registrar evento</string>
 </resources>

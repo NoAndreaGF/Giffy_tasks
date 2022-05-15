@@ -34,19 +34,33 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/date2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="3dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/date2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <TextView
         android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="69dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="185dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/rubik_bold"
-        android:text="@string/date"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="23sp" />
 
     <EditText
-        android:id="@+id/camiseta"
+        android:id="@+id/etevento"
         android:layout_width="310dp"
         android:layout_height="42dp"
         android:layout_marginLeft="52dp"
@@ -60,7 +74,7 @@
         android:textSize="12dp" />
 
     <Button
-        android:id="@+id/registrar"
+        android:id="@+id/btnregistrar"
         android:layout_width="310dp"
         android:layout_height="38dp"
         android:layout_marginLeft="52dp"
@@ -72,3 +86,4 @@
         android:textSize="15dp" />
 
 </LinearLayout>
+
