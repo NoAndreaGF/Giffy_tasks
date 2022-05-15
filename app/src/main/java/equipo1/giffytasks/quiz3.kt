@@ -37,7 +37,6 @@ class quiz3 : AppCompatActivity() {
         var respuesta11 = "empty"
         var respuesta12 = "empty"
         var respuesta13 = "empty"
-        var respuesta14 = "empty"
 
         // Pregunta 10
         var accion = binding.btnAccion
@@ -173,13 +172,10 @@ class quiz3 : AppCompatActivity() {
 
         binding.siguiente.setOnClickListener {
             val mModelo = binding.etModelo.text.toString()
-            val mExtra = binding.etAlgomas.text.toString()
 
             if (!(mModelo.isEmpty())) {
                 respuesta9 = mModelo
-            } else if (!(mExtra.isEmpty())) {
-                respuesta14 = mExtra
-            }   else if (respuesta10.equals("empty")) {
+            } else if (respuesta10.equals("empty")) {
                 Toast.makeText(this, "Seleccione un tipo de regalo.",
                     Toast.LENGTH_SHORT).show()
             } else if (respuesta11.equals("empty")) {
@@ -192,7 +188,7 @@ class quiz3 : AppCompatActivity() {
                 Toast.makeText(this, "Seleccione un tipo de dulce.",
                     Toast.LENGTH_SHORT).show()
             } else{
-                fillQuiz(respuesta9, respuesta10, respuesta11, respuesta12, respuesta13, respuesta14)
+                fillQuiz(respuesta9, respuesta10, respuesta11, respuesta12, respuesta13)
             }
         }
 
@@ -234,7 +230,7 @@ class quiz3 : AppCompatActivity() {
     }
 
     private fun fillQuiz(pregunta9: String, pregunta10: String, pregunta11: String,
-                         pregunta12: String, pregunta13: String, pregunta14: String) {
+                         pregunta12: String, pregunta13: String) {
         val uid = auth.currentUser?.uid
 
         databaseReference = FirebaseDatabase.getInstance().getReference("users")
@@ -245,7 +241,6 @@ class quiz3 : AppCompatActivity() {
         taskMap["regalo_dinero"] = pregunta11
         taskMap["cultura_popular"] = pregunta12
         taskMap["no_gusta"] = pregunta13
-        taskMap["extra"] = pregunta14
         if (uid != null) {
             databaseReference.child("user").child(uid).child("quiz")
                 .updateChildren(taskMap).addOnCompleteListener { task ->

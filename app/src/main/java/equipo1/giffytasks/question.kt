@@ -40,7 +40,7 @@ class question : AppCompatActivity() {
         val userQuiz = UserQuiz("empty", "empty", "empty", "empty",
             "empty", "empty", "empty", "empty", "empty",
             "empty", "empty", "empty", "empty",
-            "empty", "empty", "empty", "empty")
+            "empty", "empty", "empty")
         if (uid != null) {
             databaseReference.child("user").child(uid).child("quiz").setValue(userQuiz).addOnCompleteListener { task ->
                 if (task.isSuccessful) {

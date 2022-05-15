@@ -227,10 +227,8 @@ class quiz : AppCompatActivity() {
             databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
                 if (task.exists()) {
                     val hobbie = task.child("hobbie").value.toString()
-                    if (hobbie.equals("cocinar")) {
-                        binding.btnCocinar.setTextColor(black)
-                    }
-                    //binding.profileName.text = nombre.toString()
+                    answer1(hobbie, black)
+
                 } else {
                     Toast.makeText(this, "No se recupero el usuario.",
                         Toast.LENGTH_SHORT).show()
@@ -239,6 +237,15 @@ class quiz : AppCompatActivity() {
         }
 
     }
+
+    private fun answer1(hobbie: String, black: Int) {
+
+        if (hobbie.equals("cocinar")) {
+            binding.btnCocinar.setTextColor(black)
+        }
+
+    }
+
 
     private fun question1(musica: Button, dibujar: Button, leer: Button, deporte: Button,
                           cocinar: Button, peliculas: Button, jardineria: Button, otro: Button,

@@ -48,7 +48,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/pregunta15"
+                android:id="@+id/pregunta14"
                 android:layout_width="345dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="39dp"

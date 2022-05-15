@@ -42,9 +42,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="560dp"
+        android:layout_height="460dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/round_yellow"
         android:orientation="vertical">
 
@@ -383,30 +383,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/pregunta14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="39dp"
-            android:fontFamily="@font/varela_round"
-            android:text="@string/question14"
-            android:textColor="@color/purple"
-            android:textSize="18dp" />
-
-        <EditText
-            android:id="@+id/et_algomas"
-            android:layout_width="280dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="62dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:fontFamily="@font/varela_round"
-            android:inputType="textLongMessage"
-            android:paddingLeft="15dip"
-            android:autofillHints="@string/write"
-            android:hint="@string/write"
-            android:textColor="@color/gray"
-            android:textSize="12dp" />
     </LinearLayout>
 
     <Button

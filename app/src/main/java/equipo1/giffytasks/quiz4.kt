@@ -39,9 +39,9 @@ class quiz4 : AppCompatActivity() {
 
 
         // Question
-        var respuesta15 = "empty"
+        var respuesta14 = "empty"
 
-        // Pregunta 15
+        // Pregunta 14
         var pony = binding.btnPony
         var peluches = binding.btnPeluche
         var ropa = binding.btnRopa
@@ -56,84 +56,84 @@ class quiz4 : AppCompatActivity() {
         var juegos_mesa = binding.btnJuegosMesa
 
         pony.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             pony.background = selected
-            respuesta15 = "pony"
+            respuesta14 = "pony"
         }
         peluches.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             peluches.background = selected
-            respuesta15 = "peluches"
+            respuesta14 = "peluches"
         }
         ropa.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             ropa.background = selected
-            respuesta15 = "ropa"
+            respuesta14 = "ropa"
         }
         dinero.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             dinero.background = selected
-            respuesta15 = "dinero"
+            respuesta14 = "dinero"
         }
         joyas.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             joyas.background = selected
-            respuesta15 = "joyas"
+            respuesta14 = "joyas"
         }
         perfume.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             perfume.background = selected
-            respuesta15 = "perfume"
+            respuesta14 = "perfume"
         }
         tecno.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             tecno.background = selected
-            respuesta15 = "tecno"
+            respuesta14 = "tecno"
         }
         utiles.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             utiles.background = selected
-            respuesta15 = "utiles"
+            respuesta14 = "utiles"
         }
         juegos.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             juegos.background = selected
-            respuesta15 = "juegos"
+            respuesta14 = "juegos"
         }
         funkos.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             funkos.background = selected
-            respuesta15 = "funkos"
+            respuesta14 = "funkos"
         }
         maquillaje.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             maquillaje.background = selected
-            respuesta15 = "maquillaje"
+            respuesta14 = "maquillaje"
         }
         juegos_mesa.setOnClickListener {
-            question15(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
+            question14(pony, peluches, ropa, dinero, perfume, tecno, utiles, juegos, funkos,
                 maquillaje, juegos_mesa, notSelected)
             juegos_mesa.background = selected
-            respuesta15 = "juegos_mesa"
+            respuesta14 = "juegos_mesa"
         }
 
         binding.siguiente.setOnClickListener {
-            fillQuiz(respuesta15)
+            fillQuiz(respuesta14)
         }
     }
 
-    private fun question15(pony: ImageButton, peluches: ImageButton, ropa: ImageButton, dinero: ImageButton,
+    private fun question14(pony: ImageButton, peluches: ImageButton, ropa: ImageButton, dinero: ImageButton,
                           perfume: ImageButton, tecno: ImageButton, utiles: ImageButton, juegos: ImageButton,
                           funkos: ImageButton, maquillaje: ImageButton, juegos_mesa: ImageButton, notSelected: Drawable) {
         pony.background = notSelected
