@@ -384,7 +384,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:fontFamily="@font/varela_round"
-            android:inputType="textPersonName"
+            android:inputType="textNoSuggestions"
             android:paddingLeft="15dip"
             android:autofillHints="@string/pants"
             android:hint="@string/pants"

@@ -20,6 +20,9 @@ class quiz4 : AppCompatActivity() {
     private lateinit var binding: ActivityQuiz4Binding
     private lateinit var databaseReference: DatabaseReference
 
+    // Question
+    private var respuesta14 = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,17 +32,13 @@ class quiz4 : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
-        // Colors
-        val black = resources.getColor(R.color.black, theme)
-        val white = resources.getColor(R.color.white, theme)
+        val uid = auth.currentUser?.uid
 
         // ImageButton
         val notSelected = resources.getDrawable(R.drawable.border_image, theme)
         val selected = resources.getDrawable(R.drawable.border_image_selected, theme)
 
-
-        // Question
-        var respuesta14 = "empty"
+        recoverQuiz(uid, selected)
 
         //regalo
         var regalo14 = "empty"
@@ -146,6 +145,61 @@ class quiz4 : AppCompatActivity() {
 
         binding.siguiente.setOnClickListener {
             fillQuiz(respuesta14, regalo14)
+        }
+    }
+
+    private fun recoverQuiz(uid: String?, selected: Drawable?) {
+        var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        if (uid != null) {
+            databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
+                if (task.exists()) {
+                    val seleccion = task.child("seleccion").value.toString()
+                    answer14(seleccion, selected)
+                } else {
+                    Toast.makeText(this, "No se recupero el quiz.",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+
+    private fun answer14(seleccion: String, selected: Drawable?) {
+        if (seleccion.equals("pony")) {
+            binding.btnPony.background = selected
+            respuesta14 = "pony"
+        } else if (seleccion.equals("peluches")) {
+            binding.btnPeluche.background = selected
+            respuesta14 = "peluches"
+        } else if (seleccion.equals("ropa")) {
+            binding.btnRopa.background = selected
+            respuesta14 = "ropa"
+        } else if (seleccion.equals("dinero")) {
+            binding.btnDinero.background = selected
+            respuesta14 = "dinero"
+        } else if (seleccion.equals("joyas")) {
+            binding.btnJoyas.background = selected
+            respuesta14 = "joyas"
+        } else if (seleccion.equals("perfume")) {
+            binding.btnPerfume.background = selected
+            respuesta14 = "perfume"
+        } else if (seleccion.equals("tecno")) {
+            binding.btnTecno.background = selected
+            respuesta14 = "tecno"
+        } else if (seleccion.equals("utiles")) {
+            binding.btnUtiles.background = selected
+            respuesta14 = "utiles"
+        } else if (seleccion.equals("juegos")) {
+            binding.btnJuegos.background = selected
+            respuesta14 = "juegos"
+        } else if (seleccion.equals("funkos")) {
+            binding.btnFunkos.background = selected
+            respuesta14 = "funkos"
+        } else if (seleccion.equals("maquillaje")) {
+            binding.btnMaquillaje.background = selected
+            respuesta14 = "maquillaje"
+        } else if (seleccion.equals("juegos_mesa")) {
+            binding.btnJuegosMesa.background = selected
+            respuesta14 = "juegos_mesa"
         }
     }
 

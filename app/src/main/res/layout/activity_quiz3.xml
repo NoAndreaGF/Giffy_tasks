@@ -42,7 +42,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_height="480dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/round_yellow"
@@ -61,13 +61,13 @@
 
         <EditText
             android:id="@+id/et_modelo"
-            android:layout_width="280dp"
+            android:layout_width="310dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="62dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
             android:background="@color/white"
             android:fontFamily="@font/varela_round"
-            android:inputType="textLongMessage"
+            android:inputType="textNoSuggestions"
             android:paddingLeft="15dip"
             android:autofillHints="@string/write"
             android:hint="@string/write"

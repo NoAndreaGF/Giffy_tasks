@@ -18,6 +18,14 @@ class quiz : AppCompatActivity() {
     private lateinit var binding: ActivityQuizBinding
     private lateinit var databaseReference: DatabaseReference
 
+    // Questions
+    private var respuesta1 = "empty"
+    private var respuesta2 = "empty"
+    private var respuesta3 = "empty"
+    private var respuesta4_c = "empty"
+    private var respuesta4_p = "empty"
+    private var respuesta4_z = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,14 +42,6 @@ class quiz : AppCompatActivity() {
         val white = resources.getColor(R.color.white, theme)
 
         recoverQuiz(uid, black)
-
-        // Questions
-        var respuesta1 = "empty"
-        var respuesta2 = "empty"
-        var respuesta3 = "empty"
-        var respuesta4_c = "empty"
-        var respuesta4_p = "empty"
-        var respuesta4_z = "empty"
 
         var regalo1 = "empty"
         var regalo2 = "empty"
@@ -268,24 +268,101 @@ class quiz : AppCompatActivity() {
                 if (task.exists()) {
                     val hobbie = task.child("hobbie").value.toString()
                     answer1(hobbie, black)
-
+                    val comida = task.child("comida").value.toString()
+                    answer2(comida, black)
+                    val musica = task.child("musica").value.toString()
+                    answer3(musica, black)
+                    val camisa = task.child("camisa").value.toString()
+                    binding.etCamiseta.setText(camisa)
+                    respuesta4_c = camisa
+                    val pantalon = task.child("pantalon").value.toString()
+                    binding.etPantalon.setText(pantalon)
+                    respuesta4_p = pantalon
+                    val zapatos = task.child("zapatos").value.toString()
+                    binding.etZapatos.setText(zapatos)
+                    respuesta4_z = zapatos
                 } else {
-                    Toast.makeText(this, "No se recupero el usuario.",
+                    Toast.makeText(this, "No se recupero el quiz.",
                         Toast.LENGTH_SHORT).show()
                 }
             }
         }
-
     }
 
     private fun answer1(hobbie: String, black: Int) {
-
-        if (hobbie.equals("cocinar")) {
-            binding.btnCocinar.setTextColor(black)
+            if (hobbie.equals("musica")) {
+                binding.btnMusica.setTextColor(black)
+                respuesta1 = "musica"
+            } else if (hobbie.equals("dibujar")) {
+                binding.btnDibujar.setTextColor(black)
+                respuesta1 = "dibujar"
+            } else if (hobbie.equals("leer")) {
+                binding.btnLeer.setTextColor(black)
+                respuesta1 = "leer"
+            } else if (hobbie.equals("deporte")) {
+                binding.btnDeporte.setTextColor(black)
+                respuesta1 = "deporte"
+            } else if (hobbie.equals("cocinar")) {
+                binding.btnCocinar.setTextColor(black)
+                respuesta1 = "cocinar"
+            } else if (hobbie.equals("peliculas")) {
+                binding.btnPeliculas.setTextColor(black)
+                respuesta1 = "peliculas"
+            } else if (hobbie.equals("jardineria")) {
+                binding.btnJardineria.setTextColor(black)
+                respuesta1 = "jardineria"
+            } else if (hobbie.equals("otro")) {
+                binding.btnOtro.setTextColor(black)
+                respuesta1 = "otro"
+            } else if (hobbie.equals("bailar")) {
+                binding.btnBailar.setTextColor(black)
+                respuesta1 = "bailar"
+            }
         }
 
-    }
+        private fun answer2(comida: String, black: Int) {
+            if (comida.equals("mexicana")) {
+                binding.btnMexicana.setTextColor(black)
+                respuesta2 = "mexicana"
+            } else if (comida.equals("italiana")) {
+                binding.btnItaliana.setTextColor(black)
+                respuesta2 = "italiana"
+            } else if (comida.equals("china")) {
+                binding.btnChina.setTextColor(black)
+                respuesta2 = "china"
+            } else if (comida.equals("espaniola")) {
+                binding.btnEspaniola.setTextColor(black)
+                respuesta2 = "espaniola"
+            } else if (comida.equals("suiza")) {
+                binding.btnSuiza.setTextColor(black)
+                respuesta2 = "suiza"
+            } else if (comida.equals("rapida")) {
+                binding.btnRapida.setTextColor(black)
+                respuesta2 = "rapida"
+            }
+        }
 
+        private fun answer3(musica: String, black: Int) {
+            if (musica.equals("ninguna")) {
+                binding.btnNinguna.setTextColor(black)
+                respuesta3 = "ninguna"
+            } else if (musica.equals("rap")) {
+                binding.btnRap.setTextColor(black)
+                respuesta3 = "rap"
+            } else if (musica.equals("pop")) {
+                binding.btnPop.setTextColor(black)
+                respuesta3 = "pop"
+            } else if (musica.equals("reggeaton")) {
+                binding.btnReggeaton.setTextColor(black)
+                respuesta3 = "reggeaton"
+            } else if (musica.equals("kpop")) {
+                binding.btnKpop.setTextColor(black)
+                respuesta3 = "kpop"
+            } else if (musica.equals("rock")) {
+                binding.btnRock.setTextColor(black)
+                respuesta3 = "rock"
+            }
+        }
 
     private fun question1(musica: Button, dibujar: Button, leer: Button, deporte: Button,
                           cocinar: Button, peliculas: Button, jardineria: Button, otro: Button,
@@ -361,7 +438,6 @@ class quiz : AppCompatActivity() {
                         Toast.LENGTH_SHORT).show()
                 }
             }
-
 
         }
     }

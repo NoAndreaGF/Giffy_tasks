@@ -6,7 +6,6 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +18,12 @@ class quiz2 : AppCompatActivity() {
     private lateinit var binding: ActivityQuiz2Binding
     private lateinit var databaseReference: DatabaseReference
 
+    // Questions
+    private var respuesta5 = "empty"
+    private var respuesta6 = "empty"
+    private var respuesta7 = "empty"
+    private var respuesta8 = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,15 +33,17 @@ class quiz2 : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
+        val uid = auth.currentUser?.uid
+
         // Colors
         val black = resources.getColor(R.color.black, theme)
         val white = resources.getColor(R.color.white, theme)
 
-        // Questions
-        var respuesta5 = "empty"
-        var respuesta6 = "empty"
-        var respuesta7 = "empty"
-        var respuesta8 = "empty"
+        // ImageButton
+        val notSelected = resources.getDrawable(R.drawable.border_image, theme)
+        val selected = resources.getDrawable(R.drawable.border_image_selected, theme)
+
+        recoverQuiz(uid, black, selected)
 
         //regalos
         var regalo5 = "empty"
@@ -60,17 +67,12 @@ class quiz2 : AppCompatActivity() {
             comida.setTextColor(black)
             respuesta5= "chocolate"
             regalo5 = "https://www.amazon.com.mx/ESTUCHE-CHOCOLATES-FERRERO-RELLENO-AVELLANA/dp/B004VNCCEO/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13M68LM0DN9P7&keywords=chocolate&qid=1652580570&sprefix=chocolate%2Caps%2C195&sr=8-7"
-
         }
 
         // Pregunta 6
         var flores = binding.btnFlores
         var figuras = binding.btnFiguras
         var puntos = binding.btnPuntos
-
-        // ImageButton
-        val notSelected = resources.getDrawable(R.drawable.border_image, theme)
-        val selected = resources.getDrawable(R.drawable.border_image_selected, theme)
 
         flores.setOnClickListener {
             flores.background = selected
@@ -272,7 +274,112 @@ class quiz2 : AppCompatActivity() {
                     regalo8)
             }
         }
+    }
 
+    private fun recoverQuiz(uid: String?, black: Int, selected: Drawable) {
+        var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        if (uid != null) {
+            databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
+                if (task.exists()) {
+                    val flor_chocolate = task.child("flor_chocolate").value.toString()
+                    answer5(flor_chocolate, black)
+                    val estampado = task.child("estampado").value.toString()
+                    answer6(estampado, selected)
+                    val color = task.child("color").value.toString()
+                    answer7(color, black)
+                    val dulces = task.child("dulces").value.toString()
+                    answer8(dulces, black)
+                } else {
+                    Toast.makeText(this, "No se recupero el quiz.",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+
+    private fun answer5(florChocolate: String, black: Int) {
+        if (florChocolate.equals("flores")) {
+            binding.btnRegalos.setTextColor(black)
+            respuesta5 = "flores"
+        } else if (florChocolate.equals("chocolate")) {
+            binding.btnChocolate.setTextColor(black)
+            respuesta5 = "chocolate"
+        }
+    }
+
+    private fun answer6(estampado: String, selected: Drawable) {
+        if (estampado.equals("flores")) {
+            binding.btnFlores.background = selected
+            respuesta6 = "flores"
+        } else if (estampado.equals("figuras")) {
+            binding.btnFiguras.background = selected
+            respuesta6 = "figuras"
+        } else if (estampado.equals("puntos")) {
+            binding.btnPuntos.background = selected
+            respuesta6 = "puntos"
+        }
+    }
+
+    private fun answer7(color: String, black: Int) {
+        if (color.equals("rojo")) {
+            binding.btnRojo.setTextColor(black)
+            respuesta7 = "rojo"
+        } else if (color.equals("naranja")) {
+            binding.btnNaranja.setTextColor(black)
+            respuesta7 = "naranja"
+        } else if (color.equals("amarillo")) {
+            binding.btnAmarillo.setTextColor(black)
+            respuesta7 = "amarillo"
+        } else if (color.equals("verde")) {
+            binding.btnVerde.setTextColor(black)
+            respuesta7 = "verde"
+        } else if (color.equals("azul")) {
+            binding.btnAzul.setTextColor(black)
+            respuesta7 = "azul"
+        } else if (color.equals("morado")) {
+            binding.btnMorado.setTextColor(black)
+            respuesta7 = "morado"
+        } else if (color.equals("cafe")) {
+            binding.btnCafe.setTextColor(black)
+            respuesta7 = "cafe"
+        } else if (color.equals("negro")) {
+            binding.btnNegro.setTextColor(black)
+            respuesta7 = "negro"
+        } else if (color.equals("blanco")) {
+            binding.btnBlanco.setTextColor(black)
+            respuesta7 = "blanco"
+        }
+    }
+
+    private fun answer8(dulces: String, black: Int) {
+        if (dulces.equals("chocolate")) {
+            binding.btnChocolate.setTextColor(black)
+            respuesta8 = "chocolate"
+        } else if (dulces.equals("gomitas")) {
+            binding.btnGomitas.setTextColor(black)
+            respuesta8 = "gomitas"
+        } else if (dulces.equals("chicles")) {
+            binding.btnChicles.setTextColor(black)
+            respuesta8 = "chicles"
+        } else if (dulces.equals("caramelo")) {
+            binding.btnCaramelos.setTextColor(black)
+            respuesta8 = "caramelo"
+        } else if (dulces.equals("chile")) {
+            binding.btnChile.setTextColor(black)
+            respuesta8 = "chile"
+        } else if (dulces.equals("frutas")) {
+            binding.btnFrutas.setTextColor(black)
+            respuesta8 = "frutas"
+        } else if (dulces.equals("tipicos")) {
+            binding.btnTipicos.setTextColor(black)
+            respuesta8 = "tipicos"
+        } else if (dulces.equals("artesanales")) {
+            binding.btnArtesanal.setTextColor(black)
+            respuesta8 = "artesanales"
+        } else if (dulces.equals("rellenos")) {
+            binding.btnRellenos.setTextColor(black)
+            respuesta8 = "rellenos"
+        }
     }
 
     private fun question5(regalos: Button, comida: Button, white: Int) {

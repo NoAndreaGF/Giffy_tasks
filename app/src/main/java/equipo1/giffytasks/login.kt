@@ -68,7 +68,7 @@ class login : AppCompatActivity() {
     }
 
     private fun readload() {
-        val intent = Intent(this, quiz::class.java)
+        val intent = Intent(this, NavigationActivity::class.java)
         //intent.putExtra("user", user)
         this.startActivity(intent)
     }

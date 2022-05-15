@@ -18,6 +18,13 @@ class quiz3 : AppCompatActivity() {
     private lateinit var binding: ActivityQuiz3Binding
     private lateinit var databaseReference: DatabaseReference
 
+    // Questions
+    private var respuesta9 = "empty"
+    private var respuesta10 = "empty"
+    private var respuesta11 = "empty"
+    private var respuesta12 = "empty"
+    private var respuesta13 = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,16 +34,14 @@ class quiz3 : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
+        val uid = auth.currentUser?.uid
+
         // Colors
         val black = resources.getColor(R.color.black, theme)
         val white = resources.getColor(R.color.white, theme)
 
-        // Questions
-        var respuesta9 = "empty"
-        var respuesta10 = "empty"
-        var respuesta11 = "empty"
-        var respuesta12 = "empty"
-        var respuesta13 = "empty"
+        recoverQuiz(uid, black)
+
         //regalos
         var regalo10 = "empty"
         var regalo11 = "empty"
@@ -208,8 +213,9 @@ class quiz3 : AppCompatActivity() {
         binding.siguiente.setOnClickListener {
             val mModelo = binding.etModelo.text.toString()
 
-            if (!(mModelo.isEmpty())) {
-                respuesta9 = mModelo
+            if (mModelo.isEmpty()) {
+                Toast.makeText(this, "Ingrese una modelo de celular.",
+                    Toast.LENGTH_SHORT).show()
             } else if (respuesta10.equals("empty")) {
                 Toast.makeText(this, "Seleccione un tipo de regalo.",
                     Toast.LENGTH_SHORT).show()
@@ -223,11 +229,112 @@ class quiz3 : AppCompatActivity() {
                 Toast.makeText(this, "Seleccione un tipo de dulce.",
                     Toast.LENGTH_SHORT).show()
             } else{
+                respuesta9 = mModelo
                 fillQuiz(respuesta9, respuesta10, respuesta11, respuesta12, respuesta13,
                     regalo10, regalo11, regalo12)
             }
         }
 
+    }
+
+    private fun recoverQuiz(uid: String?, black: Int) {
+        var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        if (uid != null) {
+            databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
+                if (task.exists()) {
+                    val celular_modelo = task.child("celular_modelo").value.toString()
+                    binding.etModelo.setText(celular_modelo)
+                    respuesta9 = celular_modelo
+                    val genero_peliculas = task.child("genero_peliculas").value.toString()
+                    answer10(genero_peliculas, black)
+                    val regalo_dinero = task.child("regalo_dinero").value.toString()
+                    answer11(regalo_dinero, black)
+                    val cultura_popular = task.child("cultura_popular").value.toString()
+                    answer12(cultura_popular, black)
+                    val no_gusta = task.child("no_gusta").value.toString()
+                    answer13(no_gusta, black)
+                } else {
+                    Toast.makeText(this, "No se recupero el quiz.",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+    }
+
+    private fun answer10(generoPeliculas: String, black: Int) {
+        if (generoPeliculas.equals("accion")) {
+            binding.btnAccion.setTextColor(black)
+            respuesta10 = "accion"
+        } else if (generoPeliculas.equals("fantasia")) {
+            binding.btnFantasia.setTextColor(black)
+            respuesta10 = "fantasia"
+        } else if (generoPeliculas.equals("scifi")) {
+            binding.btnCiencia.setTextColor(black)
+            respuesta10 = "scifi"
+        } else if (generoPeliculas.equals("comedia")) {
+            binding.btnComedia.setTextColor(black)
+            respuesta10 = "comedia"
+        } else if (generoPeliculas.equals("romance")) {
+            binding.btnRomance.setTextColor(black)
+            respuesta10 = "romance"
+        } else if (generoPeliculas.equals("animadas")) {
+            binding.btnAnimadas.setTextColor(black)
+            respuesta10 = "animadas"
+        }
+    }
+
+    private fun answer11(regaloDinero: String, black: Int) {
+        if (regaloDinero.equals("regalo")) {
+            binding.btnRegalo.setTextColor(black)
+            respuesta11 = "regalo"
+        } else if (regaloDinero.equals("dinero")) {
+            binding.btnDinero.setTextColor(black)
+            respuesta11 = "dinero"
+        }
+    }
+
+    private fun answer12(culturaPopular: String, black: Int) {
+        if (culturaPopular.equals("starWars")) {
+            binding.btnStarwars.setTextColor(black)
+            respuesta12 = "starWars"
+        } else if (culturaPopular.equals("marvel")) {
+            binding.btnMarvel.setTextColor(black)
+            respuesta12 = "marvel"
+        } else if (culturaPopular.equals("dc")) {
+            binding.btnDc.setTextColor(black)
+            respuesta12 = "dc"
+        } else if (culturaPopular.equals("harry_potter")) {
+            binding.btnHarryPotter.setTextColor(black)
+            respuesta12 = "harry_potter"
+        } else if (culturaPopular.equals("nintendo")) {
+            binding.btnNintendo.setTextColor(black)
+            respuesta12 = "nintendo"
+        } else if (culturaPopular.equals("disney")) {
+            binding.btnDisney.setTextColor(black)
+            respuesta12 = "disney"
+        } else if (culturaPopular.equals("wwe")) {
+            binding.btnWwe.setTextColor(black)
+            respuesta12 = "wwe"
+        } else if (culturaPopular.equals("los_simpson")) {
+            binding.btnSimpson.setTextColor(black)
+            respuesta12 = "los_simpson"
+        } else if (culturaPopular.equals("silent_hill")) {
+            binding.btnSilentHill.setTextColor(black)
+            respuesta12 = "silent_hill"
+        }
+    }
+
+    private fun answer13(noGusta: String, black: Int) {
+        if (noGusta.equals("ropa")) {
+            binding.btnRopa.setTextColor(black)
+            respuesta13 = "ropa"
+        } else if (noGusta.equals("comida")) {
+            binding.btnComida.setTextColor(black)
+            respuesta13 = "comida"
+        } else if (noGusta.equals("juguetes")) {
+            binding.btnJuguetes.setTextColor(black)
+            respuesta13 = "juguetes"
+        }
     }
 
     private fun question10(accion: Button, fantasia: Button, scifi: Button, comedia: Button,
