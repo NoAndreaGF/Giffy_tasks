@@ -22,7 +22,7 @@
             android:textSize="8dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_dia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
@@ -33,7 +33,7 @@
             android:textSize="30dp" />
 
         <TextView
-            android:id="@+id/amigos"
+            android:id="@+id/tv_mes"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -54,7 +54,7 @@
         android:paddingTop="18dp"
         android:text="@string/event"
         android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:textSize="12dp" />
 
 </LinearLayout>
 

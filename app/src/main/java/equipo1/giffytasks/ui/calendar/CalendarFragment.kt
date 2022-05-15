@@ -14,6 +14,7 @@ import com.firebase.ui.auth.AuthUI.getApplicationContext
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import equipo1.giffytasks.Event
 import equipo1.giffytasks.databinding.FragmentCalendarBinding
 import equipo1.giffytasks.quiz2
 
@@ -40,8 +41,17 @@ class CalendarFragment : Fragment() {
         val btnregistrar: Button = binding.btnregistrar
         val eventoTexto: EditText = binding.etevento
 
+        // Date
+        var anio = "aaaa"
+        var mes = "mm"
+        var dia = "dd"
+
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             val msg = "" + dayOfMonth + "/" + (month + 1) + "/" + year
+            anio = year.toString()
+            mes = month.toString()
+            dia = dayOfMonth.toString()
+
             dateView.setText(msg)
             dateView.text = msg
         }
@@ -49,7 +59,6 @@ class CalendarFragment : Fragment() {
         btnregistrar.setOnClickListener {
             var fecha = dateView.getText() as String
             var evento = eventoTexto.getText().toString()
-            var fechaEvento = fecha + "-" + evento
             if (TextUtils.isEmpty(fecha) or TextUtils.isEmpty(evento)) {
                 Toast.makeText(
                     this@CalendarFragment.requireContext(),
@@ -59,22 +68,20 @@ class CalendarFragment : Fragment() {
                     .show();
 
             } else {
-                dates(fechaEvento)
+                dates(anio, mes, dia, evento)
             }
         }
         return root
     }
 
-    private lateinit var calendarView: CalendarView
-    private lateinit var dateView: TextView
-    var activity: Activity? = getActivity()
-
-    private fun dates(text: String) {
+    private fun dates(anio: String, mes: String, dia: String, fecha_evento: String) {
         val uid = auth.currentUser?.uid
+
         databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        val evento = Event(anio, mes, dia, fecha_evento)
         if (uid != null) {
             databaseReference.child("user").child(uid).child("evento").push()
-                .setValue(text.toString()).addOnCompleteListener { task ->
+                .setValue(evento).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(
                             this@CalendarFragment.requireContext(),
@@ -92,20 +99,8 @@ class CalendarFragment : Fragment() {
                     }
                 }
         }
-        //text.toString()
     }
 
-    /**override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.fragment_calendar)
-    calendarView = findViewById(R.id.calendarView)
-    dateView = findViewById(R.id.date)
-    calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
-    val msg = "La fecha es " + dayOfMonth + "/" + (month + 1) + "/" + year
-    Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
-    dateView.text= msg
-    }
-    }**/
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
