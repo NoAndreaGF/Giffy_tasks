@@ -42,6 +42,11 @@ class login : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.olvido.setOnClickListener{
+            val intent = Intent(this, forgot_password::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun SignIn(email: String, password: String) {

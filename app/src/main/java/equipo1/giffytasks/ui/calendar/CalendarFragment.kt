@@ -3,6 +3,7 @@ package equipo1.giffytasks.ui.calendar
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -49,7 +50,17 @@ class CalendarFragment : Fragment() {
             var fecha = dateView.getText() as String
             var evento = eventoTexto.getText().toString()
             var fechaEvento = fecha + "-" + evento
-            dates(fechaEvento)
+            if (TextUtils.isEmpty(fecha) or TextUtils.isEmpty(evento)) {
+                Toast.makeText(
+                    this@CalendarFragment.requireContext(),
+                    "Ingrese la fecha del evento y nombre",
+                    Toast.LENGTH_SHORT
+                )
+                    .show();
+
+            } else {
+                dates(fechaEvento)
+            }
         }
         return root
     }
@@ -59,12 +70,6 @@ class CalendarFragment : Fragment() {
     var activity: Activity? = getActivity()
 
     private fun dates(text: String) {
-        Toast.makeText(
-            this@CalendarFragment.requireContext(),
-            "Evento registrado",
-            Toast.LENGTH_SHORT
-        )
-            .show();
         val uid = auth.currentUser?.uid
         databaseReference = FirebaseDatabase.getInstance().getReference("users")
         if (uid != null) {
