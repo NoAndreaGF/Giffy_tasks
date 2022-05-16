@@ -157,6 +157,7 @@
         android:gravity="center">
 
         <ImageButton
+            android:id="@+id/image_button1"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
@@ -169,6 +170,7 @@
 
 
         <ImageButton
+            android:id="@+id/image_button2"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
@@ -181,6 +183,7 @@
             android:src="@drawable/peluche" />
 
         <ImageButton
+            android:id="@+id/image_button3"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
@@ -200,6 +203,7 @@
         android:gravity="center">
 
         <ImageButton
+            android:id="@+id/image_button4"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
@@ -211,6 +215,7 @@
             android:src="@drawable/funko" />
 
         <ImageButton
+            android:id="@+id/image_button5"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"
@@ -223,6 +228,7 @@
             android:src="@drawable/maquillaje" />
 
         <ImageButton
+            android:id="@+id/image_button6"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_gravity="center"

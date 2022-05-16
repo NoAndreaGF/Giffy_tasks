@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
+import kotlin.coroutines.coroutineContext
 
 class ProfileViewModel : ViewModel() {
     private lateinit var auth: FirebaseAuth
@@ -23,6 +24,19 @@ class ProfileViewModel : ViewModel() {
         val uid = auth.currentUser?.uid
 
         if (uid != null) {
+            //aquí obtenemos los regalos de 'user'
+            databaseReference.child("user").child(uid).get().addOnSuccessListener { task ->
+                if (task.exists()) {
+                    val regalos = task.child("regalos").value //se obtienen los regalos
+                    value = regalos as String?
+                    print(regalos?.toString())
+                    //Toast.makeText( "No se recupero el usuario.", Toast.LENGTH_SHORT).show()
+                    //binding.profileName.text = nombre.toString()
+                } else {
+                    //Toast.makeText(activity, "No se recupero el usuario.", Toast.LENGTH_SHORT).show()
+                }
+            }
+
             databaseReference.child("user").child(uid).get().addOnSuccessListener { task ->
                 if (task.exists()) {
                     val nombre = task.child("nombre").value
