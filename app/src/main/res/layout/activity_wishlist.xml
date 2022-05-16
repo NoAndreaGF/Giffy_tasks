@@ -47,24 +47,30 @@
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/flores"
+                android:background="@drawable/fondoportada"
                 android:rowCount="2"
                 android:columnCount="1">
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_perfil_usuario"
                     android:layout_width="120dp"
                     android:layout_height="122dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    app:shapeAppearanceOverlay="@style/circleImageView"
-                    app:srcCompat="@drawable/peluche" />
+                    android:src="@drawable/user_friend"
+                    app:civ_border_color="#FF000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
+                    android:id="@+id/tv_nombre_usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/friend2"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="17dp"
                     android:fontFamily="@font/rubik_bold"
                     android:gravity="center"
@@ -84,6 +90,7 @@
                     android:orientation="vertical"
                     >
                     <ImageButton
+                        android:id="@+id/btn_amigos_amigo"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/rectangle_perfil"
@@ -127,6 +134,7 @@
                     android:orientation="vertical"
                     >
                     <ImageButton
+                        android:id="@+id/btn_opciones_amigo"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/rectangle_amistad"

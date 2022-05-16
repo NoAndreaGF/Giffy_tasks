@@ -270,7 +270,6 @@
 
     # Home screen
     <string name="home_title">¿A QUIÉN LE VAS A REGALAR HOY?</string>
-    <string name="home_send_gift">¿No tiene cuenta?</string>
 
     # Example friends
     <string name="friend1">ALAN EDUARDO TORRES</string>

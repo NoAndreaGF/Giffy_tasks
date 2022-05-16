@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
 
-class AdapterUsers(private val contexto: Context, private val usersList: ArrayList<User>, private val  picsArrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterUsers.MyViewHolder>() {
+class AdapterUsers(private val usersList: ArrayList<User>, private val  picsArrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterUsers.MyViewHolder>() {
 
 
     public class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
@@ -49,12 +49,13 @@ class AdapterUsers(private val contexto: Context, private val usersList: ArrayLi
         }
 
         holder.nombre.setOnClickListener {
-            if (isUserFriend(uid)) {
+            isUserFriend(it, holder, uid)
+            /**if (isUserFriend(it, holder, uid)) {
                 onClickFriend(it, holder,uid)
             }
             else {
                 onClickNotFriend(it, holder,uid)
-            }
+            }**/
             /**val intent = Intent(contexto, add_friend::class.java)
             intent.putExtra("nombre",  holder.nombre.text)
             intent.putExtra("uid",  uid)
@@ -63,32 +64,34 @@ class AdapterUsers(private val contexto: Context, private val usersList: ArrayLi
     }
 
     fun onClickFriend(v: View?, holder: MyViewHolder, uid: String) {
-        val intent = Intent(v!!.context, list_friend::class.java)
+        val intent = Intent(v!!.context, wishlist::class.java)
         intent.putExtra("nombre",  holder.nombre.text)
         intent.putExtra("uid",  uid)
-        contexto.startActivity(intent)
+        v!!.context.startActivity(intent)
     }
 
     fun onClickNotFriend(v: View?, holder: MyViewHolder, uid: String) {
         val intent = Intent(v!!.context, add_friend::class.java)
         intent.putExtra("nombre",  holder.nombre.text)
         intent.putExtra("uid",  uid)
-        contexto.startActivity(intent)
+        v!!.context.startActivity(intent)
     }
 
-    fun isUserFriend(uid: String) : Boolean{
-        var estatus = false
+    fun isUserFriend(v: View?, holder: MyViewHolder, uid: String) {
         var auth: FirebaseAuth = FirebaseAuth.getInstance()
         val myUid = auth.currentUser?.uid.toString()
-        println(myUid)
-        println(uid)
         var databaseReference = FirebaseDatabase.getInstance().getReference("users").child("user")
-        databaseReference.child(myUid).child("amigos").equalTo(uid).get()
+        databaseReference.child(myUid).child("amigos").child(uid).get()
             .addOnSuccessListener { task ->
-                estatus = task.exists()
-        }
-        println("es amigo: $estatus")
-        return estatus
+                if (task.exists()) {
+                    onClickFriend(v, holder,uid)
+                } else {
+                    onClickNotFriend(v, holder,uid)
+                }
+        }.addOnFailureListener {
+                onClickNotFriend(v, holder,uid)
+            }
+
     }
 
     override fun getItemCount(): Int {

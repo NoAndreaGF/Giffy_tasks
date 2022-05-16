@@ -33,7 +33,7 @@ class SearchFriendsActivity : AppCompatActivity() {
         usersArrayList = arrayListOf()
         picsArrayList = arrayListOf()
 
-        adapterUsers = AdapterUsers(this, usersArrayList, picsArrayList)
+        adapterUsers = AdapterUsers(usersArrayList, picsArrayList)
 
         recyclerView.adapter = adapterUsers
 
