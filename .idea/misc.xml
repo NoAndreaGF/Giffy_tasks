@@ -98,13 +98,20 @@
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/drawable/round_button.xml" value="0.1915" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/drawable/round_yellow.xml" value="0.2595" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_about_us.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_event_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_add_friend.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_contact.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_event_view.xml" value="0.4" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_filter.xml" value="0.4" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_friend_view.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_invite.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_list_friend.xml" value="0.264" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_menu.xml" value="0.2" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_messages.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_navigation.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_question.xml" value="0.264" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_quiz.xml" value="0.264" />
         <entry key="..\:/Users/palom/Desktop/Giffy_tasks/app/src/main/res/layout/activity_quiz2.xml" value="0.264" />

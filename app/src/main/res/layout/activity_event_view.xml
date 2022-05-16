@@ -7,7 +7,7 @@
     tools:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="106dp"
+        android:layout_width="110dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -29,32 +29,37 @@
             android:layout_marginTop="4dp"
             android:fontFamily="@font/varela_round"
             android:text="9"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30dp" />
 
         <TextView
             android:id="@+id/tv_mes"
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:fontFamily="@font/varela_round"
             android:text="@string/month"
             android:textAlignment="center"
             android:textColor="@color/white"
+
             android:textSize="12dp" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/evento"
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="288dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/border_left"
         android:fontFamily="@font/rubik_bold"
-        android:paddingTop="18dp"
+        android:paddingTop="15dp"
         android:text="@string/event"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="12dp" />
+        android:textSize="18dp" />
 
 </LinearLayout>
 

@@ -75,26 +75,55 @@ class NotificationsFragment : Fragment() {
         val uid = auth.currentUser?.uid
         if (uid != null) {
             databaseReference.child("user").child(uid).child("evento")
-                .addValueEventListener(object: ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    if (snapshot.exists()) {
-                        for (evento in snapshot.children) {
-                            val anio = evento.child("anio").getValue().toString()
-                            val dia = evento.child("dia").getValue().toString()
-                            val fecha_evento = evento.child("fecha_evento").getValue().toString()
-                            val mes = evento.child("mes").getValue().toString()
-
-                            eventArrayList.add(Event(anio, mes, dia, fecha_evento))
+                .addValueEventListener(object : ValueEventListener {
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                        if (snapshot.exists()) {
+                            for (evento in snapshot.children) {
+                                val anio = evento.child("anio").getValue().toString()
+                                val dia = evento.child("dia").getValue().toString()
+                                val fecha_evento =
+                                    evento.child("fecha_evento").getValue().toString()
+                                val mes = evento.child("mes").getValue().toString()
+                                if (mes.equals("1")) {
+                                    eventArrayList.add(Event(anio, "Enero", dia, fecha_evento))
+                                } else if (mes.equals("2")) {
+                                    eventArrayList.add(Event(anio, "Febrero", dia, fecha_evento))
+                                } else if (mes.equals("3")) {
+                                    eventArrayList.add(Event(anio, "Marzo", dia, fecha_evento))
+                                } else if (mes.equals("4")) {
+                                    eventArrayList.add(Event(anio, "Abril", dia, fecha_evento))
+                                } else if (mes.equals("5")) {
+                                    eventArrayList.add(Event(anio, "Mayo", dia, fecha_evento))
+                                } else if (mes.equals("6")) {
+                                    eventArrayList.add(Event(anio, "Junio", dia, fecha_evento))
+                                } else if (mes.equals("7")) {
+                                    eventArrayList.add(Event(anio, "Julio", dia, fecha_evento))
+                                } else if (mes.equals("8")) {
+                                    eventArrayList.add(Event(anio, "Agosto", dia, fecha_evento))
+                                }
+                                else if (mes.equals("9")) {
+                                    eventArrayList.add(Event(anio, "Septiembre", dia, fecha_evento))
+                                } else if (mes.equals("10")) {
+                                    eventArrayList.add(Event(anio, "Octubre", dia, fecha_evento))
+                                }
+                                else if (mes.equals("11")) {
+                                    eventArrayList.add(Event(anio, "Noviembre", dia, fecha_evento))
+                                }
+                                else if (mes.equals("12")) {
+                                    eventArrayList.add(Event(anio, "Diciembre", dia, fecha_evento))
+                                }
+                            }
+                            myAdapter.notifyDataSetChanged()
                         }
-                        myAdapter.notifyDataSetChanged()
                     }
-                }
 
-                override fun onCancelled(error: DatabaseError) {
-                    Toast.makeText(activity, "No se recuperaron los eventos.",
-                        Toast.LENGTH_SHORT).show()
-                }
-            })
+                    override fun onCancelled(error: DatabaseError) {
+                        Toast.makeText(
+                            activity, "No se recuperaron los eventos.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                })
         }
 
     }
