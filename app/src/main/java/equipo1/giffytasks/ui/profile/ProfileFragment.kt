@@ -22,6 +22,21 @@ import equipo1.giffytasks.ui.home.HomeViewModel
 import java.io.File
 
 class ProfileFragment : Fragment(){
+    var listhobbie = listOf("bailar", "cocinar", "deporte", "dibujar", "jardineria","leer","musica",
+    "otro", "peliculas")
+
+    var listFlores_chocolate = listOf("chocolate", "flores")
+
+    var listdulces = listOf("chocolate", "gomitas","chicles","caramelo","chile","fruta","tipicos",
+        "artesanales", "rellenos")
+
+    var listseleccion = listOf("pony", "peluches","ropa", "dinero", "joyas", "perfume", "tecno",
+        "utiles", "juegos", "funkos", "maquillaje", "juegos_mesa")
+
+    var listcolor = listOf("rojo","naranja","amarillo","verde","azul","morado","cafe","negro","blanco")
+
+    var listcultura_popular= listOf("starWars", "marvel", "dc", "harry_potter", "nintendo","disney",
+        "wwe","los_simpson", "silent_hill")
 
     private var _binding: FragmentProfileBinding? = null
     private lateinit var auth: FirebaseAuth
@@ -184,7 +199,114 @@ class ProfileFragment : Fragment(){
                 } else {
                     Toast.makeText(activity, "No se recupero.", Toast.LENGTH_SHORT).show()
                 }
+            }.addOnFailureListener{
+                Toast.makeText(activity, "No se recuperaron los productos", Toast.LENGTH_SHORT).show()
             }
+
+            databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
+                if (task.exists()) {
+                    val hobbie_user:String = task.child("hobbie").value.toString()
+                    for(i in listhobbie){
+                        if(i == hobbie_user){
+                            var storageRef = FirebaseStorage.getInstance().getReference().child("productos/"+i+".jpeg")
+                            val localFile = File.createTempFile(i, "jpeg")
+                            storageRef.getFile(localFile).addOnSuccessListener {
+                                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                                producto5.setImageBitmap(bitmap)
+                            }.addOnFailureListener{
+                                Toast.makeText(activity, "No se recuperaron las imagenes", Toast.LENGTH_SHORT).show()
+                            }
+                            break
+                        }
+                    }
+                    val flor_chocolate_user:String = task.child("flor_chocolate").value.toString()
+                    println(flor_chocolate_user)
+                    for(i in listFlores_chocolate){
+                        if(i == flor_chocolate_user){
+                            var storageRef = FirebaseStorage.getInstance().getReference().child("productos/"+i+".jpeg")
+                            val localFile = File.createTempFile(i, "jpeg")
+                            storageRef.getFile(localFile).addOnSuccessListener {
+                                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                                producto4.setImageBitmap(bitmap)
+                            }.addOnFailureListener{
+                                Toast.makeText(activity, "No se recuperaron las imagenes", Toast.LENGTH_SHORT).show()
+                            }
+                            break
+                        }
+                    }
+
+                    val dulces:String = task.child("dulces").value.toString()
+                    println(flor_chocolate_user)
+                    for(i in listdulces){
+                        if(i == dulces){
+                            var storageRef = FirebaseStorage.getInstance().getReference().child("dulces/"+i+".jpeg")
+                            val localFile = File.createTempFile(i, "jpeg")
+                            storageRef.getFile(localFile).addOnSuccessListener {
+                                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                                producto3.setImageBitmap(bitmap)
+                            }.addOnFailureListener{
+                                Toast.makeText(activity, "No se recuperaron las imagenes", Toast.LENGTH_SHORT).show()
+                            }
+                            break
+                        }
+                    }
+
+                    val color:String = task.child("color").value.toString()
+                    println(flor_chocolate_user)
+                    for(i in listcolor){
+                        if(i == color){
+                            var storageRef = FirebaseStorage.getInstance().getReference().child("color/"+i+".jpeg")
+                            val localFile = File.createTempFile(i, "jpeg")
+                            storageRef.getFile(localFile).addOnSuccessListener {
+                                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                                producto1.setImageBitmap(bitmap)
+                            }.addOnFailureListener{
+                                Toast.makeText(activity, "No se recuperaron las imagenes", Toast.LENGTH_SHORT).show()
+                            }
+                            break
+                        }
+                    }
+
+                    val cultura_popular:String = task.child("cultura_popular").value.toString()
+                    for(i in listcultura_popular){
+                        if(i == cultura_popular){
+                            var storageRef = FirebaseStorage.getInstance().getReference().child("cultura_popular/"+i+".jpeg")
+                            val localFile = File.createTempFile(i, "jpeg")
+                            storageRef.getFile(localFile).addOnSuccessListener {
+                                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                                producto2.setImageBitmap(bitmap)
+                            }.addOnFailureListener{
+                                Toast.makeText(activity, "No se recuperaron las imagenes", Toast.LENGTH_SHORT).show()
+                            }
+                            break
+                        }
+                    }
+
+                    val seleccion:String = task.child("seleccion").value.toString()
+                    for(i in listseleccion){
+                        if(i == seleccion){
+                            var storageRef = FirebaseStorage.getInstance().getReference().child("seleccion/"+i+".jpeg")
+                            val localFile = File.createTempFile(i, "jpeg")
+                            storageRef.getFile(localFile).addOnSuccessListener {
+                                val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+                                producto6.setImageBitmap(bitmap)
+                            }.addOnFailureListener{
+                                Toast.makeText(activity, "No se recuperaron las imagenes", Toast.LENGTH_SHORT).show()
+                            }
+                            break
+                        }
+                    }
+
+
+                } else {
+                    Toast.makeText(activity, "No se recupero.", Toast.LENGTH_SHORT).show()
+                }
+
+
+            }.addOnFailureListener{
+                Toast.makeText(activity, "No se recupero el quiz", Toast.LENGTH_SHORT).show()
+            }
+
         }
     }
 }
