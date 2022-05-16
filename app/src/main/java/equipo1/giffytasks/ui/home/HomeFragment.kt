@@ -70,6 +70,13 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        val search: TextView = binding.searchFriend
+
+        search.setOnClickListener{
+            val intent = Intent(this@HomeFragment.requireContext(), SearchFriendsActivity::class.java)
+            startActivity(intent)
+        }
+
         return root
 
     }
