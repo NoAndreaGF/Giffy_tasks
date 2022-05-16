@@ -166,7 +166,7 @@
             android:background="@drawable/border_image"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/juguetes" />
+            android:src="@drawable/fondo_blando" />
 
 
         <ImageButton
@@ -180,7 +180,7 @@
             android:background="@drawable/border_image"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/peluche" />
+            android:src="@drawable/fondo_blando" />
 
         <ImageButton
             android:id="@+id/image_button3"
@@ -193,7 +193,7 @@
             android:background="@drawable/border_image"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/camiseta" />
+            android:src="@drawable/fondo_blando" />
     </LinearLayout>
 
     <LinearLayout
@@ -212,7 +212,7 @@
             android:background="@drawable/border_image"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/funko" />
+            android:src="@drawable/fondo_blando" />
 
         <ImageButton
             android:id="@+id/image_button5"
@@ -225,7 +225,7 @@
             android:background="@drawable/border_image"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/maquillaje" />
+            android:src="@drawable/fondo_blando" />
 
         <ImageButton
             android:id="@+id/image_button6"
@@ -238,7 +238,7 @@
             android:background="@drawable/border_image"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/pictionary" />
+            android:src="@drawable/fondo_blando" />
     </LinearLayout>
 
     <Button
