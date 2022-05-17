@@ -26,6 +26,10 @@ class quiz : AppCompatActivity() {
     private var respuesta4_p = "empty"
     private var respuesta4_z = "empty"
 
+    private var regalo1 = "empty"
+    private var regalo2 = "empty"
+    private var regalo3 = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,10 +46,6 @@ class quiz : AppCompatActivity() {
         val white = resources.getColor(R.color.white, theme)
 
         recoverQuiz(uid, black)
-
-        var regalo1 = "empty"
-        var regalo2 = "empty"
-        var regalo3 = "empty"
 
         // Pregunta 1
         var musica = binding.btnMusica
@@ -293,30 +293,39 @@ class quiz : AppCompatActivity() {
             if (hobbie.equals("musica")) {
                 binding.btnMusica.setTextColor(black)
                 respuesta1 = "musica"
+                regalo1 = "https://www.amazon.com.mx/Guitarra-el%C3%A9ctrica-amplificador-Accesorios-Stratocaster/dp/B07LH7N6QC/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1OAIPWMRSJCLI&keywords=guitarra&qid=1652575468&sprefix=guitarr%2Caps%2C224&sr=8-1&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
             } else if (hobbie.equals("dibujar")) {
                 binding.btnDibujar.setTextColor(black)
                 respuesta1 = "dibujar"
+                regalo1 = "https://www.amazon.com.mx/Suministros-manualidades-borradores-adolescentes-principiantes/dp/B09MVZVJMY/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2DU1W6243P1ZT&keywords=l%C3%A1piz%2Bpara%2Bdibujar&qid=1652575499&sprefix=lapiz%2Bpara%2Bdibujar%2Caps%2C163&sr=8-1&th=1"
             } else if (hobbie.equals("leer")) {
                 binding.btnLeer.setTextColor(black)
                 respuesta1 = "leer"
+                regalo1 = "https://www.amazon.com.mx/Divina-comedia-Dante-Alighieri/dp/8420682888/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33ULUV3V7S4YT&keywords=la+divina+comedia&qid=1652575533&sprefix=la+divina+comedi%2Caps%2C157&sr=8-2"
             } else if (hobbie.equals("deporte")) {
                 binding.btnDeporte.setTextColor(black)
                 respuesta1 = "deporte"
+                regalo1 = "https://www.amazon.com.mx/LUMOKU-gimnasio%EF%BC%8CMaleta-Compartimento-Impermeable-h%C3%BAmedo%EF%BC%8CBolso/dp/B09SHRBX9G/ref=sr_1_10?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ZCI3MPNQ6AAD&keywords=deporte&qid=1652575570&sprefix=deporte%2Caps%2C171&sr=8-10&th=1"
             } else if (hobbie.equals("cocinar")) {
                 binding.btnCocinar.setTextColor(black)
                 respuesta1 = "cocinar"
+                regalo1 = "https://www.amazon.com.mx/utensilios-Utensilios-resistentes-antiadherentes-inoxidable/dp/B08C7HBP6Q/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3DHEJZVUF59CH&keywords=cocina&qid=1652575602&sprefix=cocin%2Caps%2C166&sr=8-7"
             } else if (hobbie.equals("peliculas")) {
                 binding.btnPeliculas.setTextColor(black)
                 respuesta1 = "peliculas"
+                regalo1 = "https://www.amazon.com.mx/Br-Paquete-Lugar-Silencio-Blu-ray/dp/B09KP8X1YC/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2A9IJUVNP1YPL&keywords=peliculas&qid=1652575642&sprefix=peliculas%2Caps%2C166&sr=8-1"
             } else if (hobbie.equals("jardineria")) {
                 binding.btnJardineria.setTextColor(black)
                 respuesta1 = "jardineria"
+                regalo1 = "https://www.amazon.com.mx/UKOKE-herramientas-almacenamiento-herramienta-intervensi%C3%B3n/dp/B06XHLQR6D/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=I1FRQPUPB32H&keywords=jardineria&qid=1652575677&sprefix=jardineria%2Caps%2C162&sr=8-2"
             } else if (hobbie.equals("otro")) {
                 binding.btnOtro.setTextColor(black)
                 respuesta1 = "otro"
+                regalo1 = "https://www.amazon.com.mx/Consola-PlayStation-5-Standard-Edition/dp/B09HTN51HN/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1TBB5JDSAV9M1&keywords=videojuegos&qid=1652575713&sprefix=videojuegos%2Caps%2C173&sr=8-3&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
             } else if (hobbie.equals("bailar")) {
                 binding.btnBailar.setTextColor(black)
                 respuesta1 = "bailar"
+                regalo1 = "https://www.amazon.com.mx/NEWKIBOU-Grabaci%C3%B3n-ySeguirte-Resplandor-el%C3%A9ctrico/dp/B09PDW31PW/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1YA72G2FW6YDW&keywords=bailar&qid=1652575742&sprefix=baila%2Caps%2C170&sr=8-1"
             }
         }
 
@@ -324,21 +333,27 @@ class quiz : AppCompatActivity() {
             if (comida.equals("mexicana")) {
                 binding.btnMexicana.setTextColor(black)
                 respuesta2 = "mexicana"
+                regalo2="https://www.amazon.com.mx/Comida-Mexicana-Snacks-Tamales-Desserts/dp/1925811492/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24CL1CMB1SOHZ&keywords=comida+mexicana&qid=1652576893&sprefix=comida+mexicana%2Caps%2C193&sr=8-1"
             } else if (comida.equals("italiana")) {
                 binding.btnItaliana.setTextColor(black)
                 respuesta2 = "italiana"
+                regalo2= "https://www.amazon.com.mx/Jamie-Cocina-En-Italia-Italiana/dp/9502812158/ref=sr_1_1?keywords=comida+italiana&qid=1652576916&sprefix=comida+itali%2Caps%2C173&sr=8-1"
             } else if (comida.equals("china")) {
                 binding.btnChina.setTextColor(black)
                 respuesta2 = "china"
+                regalo2 = "https://www.amazon.com.mx/Salsa-Siracha-Picante-Del-Gallito/dp/B015L53NGQ/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38YUZA36IIG0Z&keywords=comida+china&qid=1652576940&sprefix=comida+china%2Caps%2C160&sr=8-3"
             } else if (comida.equals("espaniola")) {
                 binding.btnEspaniola.setTextColor(black)
                 respuesta2 = "espaniola"
+                regalo2="https://www.amazon.com.mx/Comer-rezar-amar-Elizabeth-Gilbert/dp/6073134916/ref=sr_1_1?keywords=comida+espa%C3%B1ola&qid=1652576965&sprefix=comida+espa%C3%B1o%2Caps%2C175&sr=8-1"
             } else if (comida.equals("suiza")) {
                 binding.btnSuiza.setTextColor(black)
                 respuesta2 = "suiza"
+                regalo2="https://www.amazon.com.mx/YOOYIST-Calentador-Derretimiento-Calefacci%C3%B3n-Antioxidante/dp/B08DKN5TPP/ref=sr_1_1?keywords=queso+suizo&qid=1652577159&sprefix=queso+sui%2Caps%2C162&sr=8-1&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
             } else if (comida.equals("rapida")) {
                 binding.btnRapida.setTextColor(black)
                 respuesta2 = "rapida"
+                regalo2 = "https://www.amazon.com.mx/comida-r%C3%A1pida-soporte-cuadros-Vajilla/dp/B07KQMVBF7/ref=sr_1_5?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=G5YJWI6M467Y&keywords=comida%2Brapida&qid=1652577181&sprefix=comida%2Brapida%2Caps%2C156&sr=8-5&th=1"
             }
         }
 
@@ -346,21 +361,27 @@ class quiz : AppCompatActivity() {
             if (musica.equals("ninguna")) {
                 binding.btnNinguna.setTextColor(black)
                 respuesta3 = "ninguna"
+                regalo3 = "ninguna"
             } else if (musica.equals("rap")) {
                 binding.btnRap.setTextColor(black)
                 respuesta3 = "rap"
+                regalo3 = "https://www.amazon.com.mx/Eminem-Show/dp/B00006690G/ref=sr_1_4?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=AYQDQ8B02NTF&keywords=eminem&qid=1652577237&sprefix=eminem%2Caps%2C168&sr=8-4"
             } else if (musica.equals("pop")) {
                 binding.btnPop.setTextColor(black)
                 respuesta3 = "pop"
+                regalo3 = "https://www.amazon.com.mx/Thriller-Michael-Jackson/dp/B00VSHH9GC/ref=sr_1_1?keywords=michael+jackson&qid=1652577272&sprefix=michael+j%2Caps%2C170&sr=8-1"
             } else if (musica.equals("reggeaton")) {
                 binding.btnReggeaton.setTextColor(black)
                 respuesta3 = "reggeaton"
+                regalo3 = "https://www.amazon.com.mx/Daddy-Yankee-Mundial-Importado/dp/B003AND1QY/ref=sr_1_2?keywords=daddy+yankee&qid=1652577290&sprefix=daddy+%2Caps%2C170&sr=8-2"
             } else if (musica.equals("kpop")) {
                 binding.btnKpop.setTextColor(black)
                 respuesta3 = "kpop"
+                regalo3 = "https://www.amazon.com.mx/STRAY-KIDS-FRANKENSTEIN-fotogr%C3%A1ficas-adicionales/dp/B09SFWRCSD/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GIVG2A35WID9&keywords=kpop&qid=1652577317&sprefix=kpop%2Caps%2C182&sr=8-1"
             } else if (musica.equals("rock")) {
                 binding.btnRock.setTextColor(black)
                 respuesta3 = "rock"
+                regalo3 = "https://www.amazon.com.mx/Appetite-Destruction-Guns-N-Roses/dp/B000008GAC/ref=sr_1_1?keywords=guns+n+roses&qid=1652577366&sprefix=guns%2Caps%2C186&sr=8-1"
             }
         }
 

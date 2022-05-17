@@ -25,6 +25,8 @@ class quiz3 : AppCompatActivity() {
     private var respuesta12 = "empty"
     private var respuesta13 = "empty"
 
+    private var regalo12 = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +47,6 @@ class quiz3 : AppCompatActivity() {
         //regalos
         var regalo10 = "empty"
         var regalo11 = "empty"
-        var regalo12 = "empty"
 
         // Pregunta 10
         var accion = binding.btnAccion
@@ -243,10 +244,8 @@ class quiz3 : AppCompatActivity() {
             databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
                 if (task.exists()) {
                     val celular_modelo = task.child("celular_modelo").value.toString()
-                    if (celular_modelo.isEmpty()) {
-                        binding.etModelo.setText(celular_modelo)
-                        respuesta9 = celular_modelo
-                    }
+                    binding.etModelo.setText(celular_modelo)
+                    respuesta9 = celular_modelo
                     val genero_peliculas = task.child("genero_peliculas").value.toString()
                     answer10(genero_peliculas, black)
                     val regalo_dinero = task.child("regalo_dinero").value.toString()
@@ -299,30 +298,39 @@ class quiz3 : AppCompatActivity() {
         if (culturaPopular.equals("starWars")) {
             binding.btnStarwars.setTextColor(black)
             respuesta12 = "starWars"
+            regalo12 = "https://www.amazon.com.mx/STAR-WARS-colecci%C3%B3n-Vintage-Juguete/dp/B09LVWTHDH/ref=sr_1_1?keywords=star+wars&qid=1652582868&sprefix=sta%2Caps%2C158&sr=8-1"
         } else if (culturaPopular.equals("marvel")) {
             binding.btnMarvel.setTextColor(black)
             respuesta12 = "marvel"
+            regalo12 = "https://www.amazon.com.mx/Marvel-Legends-Coleccionable-Defender-Accesorios/dp/B09PVDMJ1D/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AAJXM5TJ2JMF&keywords=marvel&qid=1652582901&sprefix=marvel%2Caps%2C160&sr=8-1"
         } else if (culturaPopular.equals("dccomics")) {
             binding.btnDc.setTextColor(black)
             respuesta12 = "dccomics"
+            regalo12 = "https://www.amazon.com.mx/DC-Universe-Master-Figura-Superman/dp/B07WGHZMH1?ref_=ast_sto_dp&th=1&psc=1"
         } else if (culturaPopular.equals("harry_potter")) {
             binding.btnHarryPotter.setTextColor(black)
             respuesta12 = "harry_potter"
+            regalo12 = "https://www.amazon.com.mx/Harry-Potter-Box-Set-Books/dp/0545044251/ref=sr_1_2?keywords=harry+potter&qid=1652582985&sprefix=harr%2Cspecialty-aps%2C153&sr=8-2&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
         } else if (culturaPopular.equals("nintendo")) {
             binding.btnNintendo.setTextColor(black)
             respuesta12 = "nintendo"
+            regalo12 = "https://www.amazon.com.mx/Nintendo-Consola-Switch-Neon-Version/dp/B07VGRJDFY/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=LBJ4ARPR0I7W&keywords=nintendo&qid=1652583009&sprefix=nintendo%2Caps%2C159&sr=8-1&ufe=app_do%3Aamzn1.fos.8a46d436-f8dd-421d-a49c-494b5d1632c6"
         } else if (culturaPopular.equals("disney")) {
             binding.btnDisney.setTextColor(black)
             respuesta12 = "disney"
+            regalo12 = "https://www.amazon.com.mx/Disney-DCM-9-Mickey-Waffle-Maker/dp/B00QHUT7MO/ref=sr_1_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36YXYR37S1WAI&keywords=disney&qid=1652583028&sprefix=disney%2Caps%2C159&sr=8-6"
         } else if (culturaPopular.equals("wwe")) {
             binding.btnWwe.setTextColor(black)
             respuesta12 = "wwe"
+            regalo12 = "https://www.amazon.com.mx/WWE-Elite-Collection-Action-Figure/dp/B09CFY7TC5/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=wwe&qid=1652583048&sr=8-1"
         } else if (culturaPopular.equals("los_simpson")) {
             binding.btnSimpson.setTextColor(black)
             respuesta12 = "los_simpson"
+            regalo12 = "https://www.amazon.com.mx/1738-185-Simpsons-Homero-Colecci%C3%B3n-Cer%C3%A1mica/dp/B09H8KP2RQ/ref=sr_1_6?keywords=los+simpsons&qid=1652583061&sprefix=los+simp%2Caps%2C180&sr=8-6"
         } else if (culturaPopular.equals("silent_hill")) {
             binding.btnSilentHill.setTextColor(black)
             respuesta12 = "silent_hill"
+            regalo12 = "https://www.amazon.com.mx/Konami-Silent-Hill-Collection-PlayStation/dp/B0050SXAIG/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=27F6ABAHVK12P&keywords=silent+hill&qid=1652583084&sprefix=silent+hill%2Caps%2C177&sr=8-1"
         }
     }
 
