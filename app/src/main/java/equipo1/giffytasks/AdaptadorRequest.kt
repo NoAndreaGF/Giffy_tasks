@@ -60,14 +60,10 @@ class AdaptadorRequest(
             addFriend(uid)
         }
         holder.btnrechaza.setOnClickListener {
-           rejectFriend()
+            val uid2 = FirebaseAuth.getInstance().currentUser!!.uid
+            var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+            databaseReference.child("user").child(uid2).child("solicutudes").child(uid).removeValue()
         }
-    }
-
-    private fun rejectFriend() {
-        val uid2 = FirebaseAuth.getInstance().currentUser!!.uid
-        var databaseReference = FirebaseDatabase.getInstance().getReference("users")
-        databaseReference.child("user").child(uid2).child("solicutudes").child(uid).removeValue()
     }
 
     private fun addFriend(uid: String) {
@@ -77,7 +73,7 @@ class AdaptadorRequest(
             databaseReference.child("user").child(uid2).child("amigos").push()
                 .setValue(uid).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                       // rejectFriend()
+
                     } else {
 
                     }
