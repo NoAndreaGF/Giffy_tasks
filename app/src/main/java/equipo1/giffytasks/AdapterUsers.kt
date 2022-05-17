@@ -16,7 +16,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
 
-class AdapterUsers(private val usersList: ArrayList<User>, private val  picsArrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterUsers.MyViewHolder>() {
+class
+AdapterUsers(private val usersList: ArrayList<User>, private val  picsArrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterUsers.MyViewHolder>() {
 
 
     public class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
@@ -35,6 +36,7 @@ class AdapterUsers(private val usersList: ArrayList<User>, private val  picsArra
         val uid : String = picsArrayList[position]
         holder.nombre.text = usuario.nombre
 
+
         var storageRef = FirebaseStorage.getInstance().getReference("image/" + uid)
 
         val localFile = File.createTempFile("tempImage", "jpeg")
@@ -50,16 +52,6 @@ class AdapterUsers(private val usersList: ArrayList<User>, private val  picsArra
 
         holder.nombre.setOnClickListener {
             isUserFriend(it, holder, uid)
-            /**if (isUserFriend(it, holder, uid)) {
-                onClickFriend(it, holder,uid)
-            }
-            else {
-                onClickNotFriend(it, holder,uid)
-            }**/
-            /**val intent = Intent(contexto, add_friend::class.java)
-            intent.putExtra("nombre",  holder.nombre.text)
-            intent.putExtra("uid",  uid)
-            contexto.startActivity(intent)**/
         }
     }
 
@@ -97,6 +89,4 @@ class AdapterUsers(private val usersList: ArrayList<User>, private val  picsArra
     override fun getItemCount(): Int {
         return usersList.size
     }
-
-
 }

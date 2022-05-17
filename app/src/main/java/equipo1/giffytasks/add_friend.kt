@@ -65,8 +65,7 @@ class add_friend : AppCompatActivity() {
                     }
                 }
             }
-            val intent = Intent(baseContext, SearchFriendsActivity::class.java)
-            startActivity(intent)
+            onBackPressed()
         }
     }
 }

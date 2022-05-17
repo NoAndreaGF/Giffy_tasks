@@ -29,7 +29,7 @@ class wishlist : AppCompatActivity() {
 
     private var listcolor = listOf("rojo","naranja","amarillo","verde","azul","morado","cafe","negro","blanco")
 
-    private var listcultura_popular= listOf("starWars", "marvel", "dc", "harry_potter", "nintendo","disney",
+    private var listcultura_popular= listOf("starWars", "marvel", "dccomics", "harry_potter", "nintendo","disney",
         "wwe","los_simpson", "silent_hill")
 
     override fun onCreate(savedInstanceState: Bundle?) {
