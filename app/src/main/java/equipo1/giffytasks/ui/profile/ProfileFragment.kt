@@ -35,7 +35,7 @@ class ProfileFragment : Fragment(){
 
     var listcolor = listOf("rojo","naranja","amarillo","verde","azul","morado","cafe","negro","blanco")
 
-    var listcultura_popular= listOf("starWars", "marvel", "dc", "harry_potter", "nintendo","disney",
+    var listcultura_popular= listOf("starWars", "marvel", "dccomics", "harry_potter", "nintendo","disney",
         "wwe","los_simpson", "silent_hill")
 
     private var _binding: FragmentProfileBinding? = null
@@ -269,6 +269,8 @@ class ProfileFragment : Fragment(){
 
                     val cultura_popular:String = task.child("cultura_popular").value.toString()
                     for(i in listcultura_popular){
+                        println(i)
+                        println(cultura_popular)
                         if(i == cultura_popular){
                             var storageRef = FirebaseStorage.getInstance().getReference().child("cultura_popular/"+i+".jpeg")
                             val localFile = File.createTempFile(i, "jpeg")

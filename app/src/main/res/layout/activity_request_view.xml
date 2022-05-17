@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:orientation="horizontal"
-    tools:context=".request_view">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +14,7 @@
         tools:layout_editor_absoluteY="5dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/iv_usuario"
+            android:id="@+id/iv_usuario_solicitud"
             android:layout_width="60dp"
             android:layout_height="61dp"
             android:layout_gravity="center_vertical"
@@ -26,7 +25,7 @@
             app:civ_border_color="#FF000000" />
 
         <TextView
-            android:id="@+id/tv_nombre"
+            android:id="@+id/tv_nombre_solicitud"
             android:layout_width="187dp"
             android:layout_height="52dp"
             android:layout_marginLeft="10dp"
@@ -47,23 +46,23 @@
             <Button
                 android:id="@+id/btn_accept"
                 android:layout_width="107dp"
-                android:layout_height="32dp"
+                android:layout_height="36dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/varela_round"
                 android:gravity="center"
                 android:text="@string/accept"
-                android:textSize="7dp" />
+                android:textSize="11dp" />
 
             <Button
                 android:id="@+id/btn_reject"
                 android:layout_width="107dp"
-                android:layout_height="32dp"
+                android:layout_height="36dp"
                 android:layout_marginTop="3dp"
                 android:backgroundTint="@color/red"
                 android:fontFamily="@font/varela_round"
                 android:gravity="center"
                 android:text="@string/reject"
-                android:textSize="7dp" />
+                android:textSize="11dp" />
 
         </LinearLayout>
 

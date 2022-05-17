@@ -58,6 +58,10 @@ class add_friend : AppCompatActivity() {
                     if (task.isCanceled) {
                         Toast.makeText(baseContext, "Fallo al enviar solicitud.",
                             Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(baseContext, "Solicitud enviada.",
+                            Toast.LENGTH_SHORT).show()
+                        onBackPressed()
                     }
                 }
             }

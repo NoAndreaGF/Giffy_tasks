@@ -143,7 +143,7 @@ class quiz3 : AppCompatActivity() {
         dc.setOnClickListener {
             question12(starWars, marvel, dc, hp, nintendo, disney, wwe, simpson, silentHill, white)
             dc.setTextColor(black)
-            respuesta12= "dc"
+            respuesta12= "dccomics"
             regalo12 = "https://www.amazon.com.mx/DC-Universe-Master-Figura-Superman/dp/B07WGHZMH1?ref_=ast_sto_dp&th=1&psc=1"
         }
         hp.setOnClickListener {
@@ -302,9 +302,9 @@ class quiz3 : AppCompatActivity() {
         } else if (culturaPopular.equals("marvel")) {
             binding.btnMarvel.setTextColor(black)
             respuesta12 = "marvel"
-        } else if (culturaPopular.equals("dc")) {
+        } else if (culturaPopular.equals("dccomics")) {
             binding.btnDc.setTextColor(black)
-            respuesta12 = "dc"
+            respuesta12 = "dccomics"
         } else if (culturaPopular.equals("harry_potter")) {
             binding.btnHarryPotter.setTextColor(black)
             respuesta12 = "harry_potter"
