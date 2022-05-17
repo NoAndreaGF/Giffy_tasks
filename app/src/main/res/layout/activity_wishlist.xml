@@ -84,297 +84,146 @@
                 android:rowCount="1"
                 android:columnCount="3"
                 android:layout_gravity="center_horizontal">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-                    <ImageButton
-                        android:id="@+id/btn_amigos_amigo"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/rectangle_perfil"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/friends_notif"
-                        android:textColor="@color/white"
-                        android:textSize="13dp"
-                        android:layout_gravity="center"
-                        />
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
-                    <ImageButton
+                    <Button
                         android:id="@+id/quiz_amigo"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/rectangle_quiz"
-                        />
-
-                    <TextView
-                        android:id="@+id/quiz_texto"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/rectangle_quiz"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/varela_round"
                         android:text="@string/profile_quiz"
-                        android:textColor="@color/white"
-                        android:textSize="13dp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="12dp" />
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
-                    <ImageButton
-                        android:id="@+id/btn_opciones_amigo"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/rectangle_amistad"
-                        />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <Button
+                        android:id="@+id/btn_opciones_amigo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/rectangle_amistad"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/varela_round"
                         android:text="AMISTAD"
-                        android:textColor="@color/white"
-                        android:textSize="13dp"
-                        android:layout_gravity="center"
-                        />
+                        android:textSize="12dp" />
                 </LinearLayout>
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/WISHLIST"
+                android:text="@string/gift_recommendation"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:textSize="23dp"
                 android:fontFamily="@font/rubik_bold"
                 />
 
-
-            <GridLayout
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:rowCount="3"
-                android:columnCount="3"
                 android:layout_gravity="center_horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Corrector para r..."
-                        />
-                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ib_regalo1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_image"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fondo_blando" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Paleta de somb..."
-                        />
-                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ib_regalo2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_image"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fondo_blando" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="vestido negro d..."
-                        />
-                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ib_regalo3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_image"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fondo_blando" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Corrector para r..."
-                        />
-                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ib_regalo4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_image"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fondo_blando" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Paleta de somb..."
-                        />
-                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ib_regalo5"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_image"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fondo_blando" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="vestido negro d..."
-                        />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Corrector para r..."
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Paleta de somb..."
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginTop="5dp"
-                    >
-                    <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/camiseta"
-                        android:background="@drawable/border_image"
-                        android:padding="10dp"
-                        android:scaleType="fitXY"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="vestido negro d..."
-                        />
-                </LinearLayout>
-
-
-            </GridLayout>
-
-
+                <ImageButton
+                    android:id="@+id/ib_regalo6"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_image"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fondo_blando" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>

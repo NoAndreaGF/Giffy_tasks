@@ -40,6 +40,8 @@ class HomeViewModel : ViewModel() {
         auth = FirebaseAuth.getInstance()
         val uid = auth.currentUser?.uid
 
+
+
         var storageRef = FirebaseStorage.getInstance().getReference("image/" + uid)
 
         val localFile = File.createTempFile("tempImage", "jpeg")

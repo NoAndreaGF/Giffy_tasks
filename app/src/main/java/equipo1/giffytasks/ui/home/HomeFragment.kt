@@ -37,10 +37,6 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val bin = FragmentHomeBinding.inflate(layoutInflater)
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
@@ -91,7 +87,6 @@ class HomeFragment : Fragment() {
                             for (usuario in snapshot.children) {
                                 val key = usuario.key.toString()
                                 var db = FirebaseDatabase.getInstance().getReference("users")
-                                println(key)
                                 db.child("user").child(key).get().addOnSuccessListener { task ->
                                     if (task.exists()) {
                                         var nombre = task.child("nombre").value.toString()
@@ -100,12 +95,10 @@ class HomeFragment : Fragment() {
                                         adapterFriends.notifyDataSetChanged()
                                     }
                                     else {
-                                        println("No esta el nombre")
                                         Toast.makeText(activity, "No tiene nombre.",
                                             Toast.LENGTH_SHORT).show()
                                     }
                                 }.addOnFailureListener {
-                                    println("No existe el usuario")
                                     Toast.makeText(activity, "No existe el usuario.",
                                         Toast.LENGTH_SHORT).show()
                                 }
