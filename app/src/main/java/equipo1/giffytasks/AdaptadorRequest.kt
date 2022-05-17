@@ -73,12 +73,14 @@ class AdaptadorRequest(
     private fun addFriend(uid: String) {
         val uid2 = FirebaseAuth.getInstance().currentUser!!.uid
         var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        val amigo : MutableMap<String, Any> = HashMap()
+        amigo[uid2] = uid2
+        val yo : MutableMap<String, Any> = HashMap()
+        yo[uid] = uid
         if (uid2 != null) {
-            databaseReference.child("user").child(uid2).child("amigos").push()
-                .setValue(uid)
+            databaseReference.child("user").child(uid2).child("amigos").updateChildren(yo)
             databaseReference.child("user").child(uid2).child("solicutudes").child(uid).removeValue()
-            databaseReference.child("user").child(uid).child("amigos").push()
-                .setValue(uid2)
+            databaseReference.child("user").child(uid).child("amigos").updateChildren(amigo)
     }
 }
 

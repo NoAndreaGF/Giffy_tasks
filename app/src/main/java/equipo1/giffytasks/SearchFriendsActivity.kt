@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isEmpty
+import androidx.core.view.isNotEmpty
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -27,9 +29,13 @@ class SearchFriendsActivity : AppCompatActivity() {
         binding = ActivitySearchFriendsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         recyclerView = binding.rvUsuarios
+
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
+
 
         usersArrayList = arrayListOf()
         picsArrayList = arrayListOf()
