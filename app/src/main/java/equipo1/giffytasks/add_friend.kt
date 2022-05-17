@@ -1,5 +1,6 @@
 package equipo1.giffytasks
 
+import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -61,10 +62,11 @@ class add_friend : AppCompatActivity() {
                     } else {
                         Toast.makeText(baseContext, "Solicitud enviada.",
                             Toast.LENGTH_SHORT).show()
-                        onBackPressed()
                     }
                 }
             }
+            val intent = Intent(baseContext, SearchFriendsActivity::class.java)
+            startActivity(intent)
         }
     }
 }

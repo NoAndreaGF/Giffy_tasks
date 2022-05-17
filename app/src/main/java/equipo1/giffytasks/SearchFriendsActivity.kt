@@ -1,9 +1,9 @@
 package equipo1.giffytasks
 
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -12,6 +12,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import equipo1.giffytasks.databinding.ActivitySearchFriendsBinding
+
 
 class SearchFriendsActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -44,16 +45,20 @@ class SearchFriendsActivity : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
+        val uid = auth.currentUser?.uid
+
         var databaseReference = FirebaseDatabase.getInstance().getReference("users")
         databaseReference.child("user")
             .addValueEventListener(object: ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if (snapshot.exists()) {
                         for (usuario in snapshot.children) {
-                            val nombre = usuario.child("nombre").getValue().toString()
-                            usersArrayList.add(User(nombre, nombre, nombre, nombre, nombre, nombre, nombre, nombre))
-                            val key_imagen = usuario.key.toString()
-                            picsArrayList.add(key_imagen)
+                            if (usuario.key.toString() != uid) {
+                                val nombre = usuario.child("nombre").getValue().toString()
+                                usersArrayList.add(User(nombre, nombre, nombre, nombre, nombre, nombre, nombre, nombre))
+                                val key_imagen = usuario.key.toString()
+                                picsArrayList.add(key_imagen)
+                            }
                         }
                         adapterUsers.notifyDataSetChanged()
                     }
@@ -64,6 +69,5 @@ class SearchFriendsActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT).show()
                 }
             })
-
     }
 }

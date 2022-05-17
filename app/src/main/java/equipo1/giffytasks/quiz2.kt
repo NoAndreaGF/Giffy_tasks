@@ -24,6 +24,10 @@ class quiz2 : AppCompatActivity() {
     private var respuesta7 = "empty"
     private var respuesta8 = "empty"
 
+    private var regalo5 = "empty"
+    private var regalo7 = "empty"
+    private var regalo8 = "empty"
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,10 +50,8 @@ class quiz2 : AppCompatActivity() {
         recoverQuiz(uid, black, selected)
 
         //regalos
-        var regalo5 = "empty"
         var regalo6 = "empty"
-        var regalo7 = "empty"
-        var regalo8 = "empty"
+
 
         // Pregunta 5
         var regalos = binding.btnRegalos
@@ -298,12 +300,15 @@ class quiz2 : AppCompatActivity() {
     }
 
     private fun answer5(florChocolate: String, black: Int) {
+        println(florChocolate)
         if (florChocolate.equals("flores")) {
             binding.btnRegalos.setTextColor(black)
             respuesta5 = "flores"
+            regalo5 = "https://www.amazon.com.mx/PUBUNUS-Artificial-Elegante-Aniversario-Cumplea%C3%B1os/dp/B09TRBX1CX/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JEJLQUVZYUE3&keywords=flores&qid=1652580514&sprefix=flores%2Caps%2C265&sr=8-1"
         } else if (florChocolate.equals("chocolate")) {
-            binding.btnChocolate.setTextColor(black)
+            binding.btnComida.setTextColor(black)
             respuesta5 = "chocolate"
+            regalo5 = "https://www.amazon.com.mx/ESTUCHE-CHOCOLATES-FERRERO-RELLENO-AVELLANA/dp/B004VNCCEO/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13M68LM0DN9P7&keywords=chocolate&qid=1652580570&sprefix=chocolate%2Caps%2C195&sr=8-7"
         }
     }
 
@@ -324,30 +329,39 @@ class quiz2 : AppCompatActivity() {
         if (color.equals("rojo")) {
             binding.btnRojo.setTextColor(black)
             respuesta7 = "rojo"
+            regalo7 = "https://www.amazon.com.mx/T-fal-Freidora-Capacidad-Porciones-Personas/dp/B096HD6LX7/ref=sr_1_32?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2XECLMO98CPY7&keywords=rojo&qid=1652580738&sprefix=rojo%2Caps%2C156&sr=8-32"
         } else if (color.equals("naranja")) {
             binding.btnNaranja.setTextColor(black)
             respuesta7 = "naranja"
+            regalo7 = "https://www.amazon.com.mx/CubreBocas-Tapabocas-Termosellado-cubreboca-mascarilla/dp/B0929FXJYV/ref=sr_1_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2O4KMN6OT6O72&keywords=naranja&qid=1652580827&sprefix=naranja%2Caps%2C166&sr=8-6"
         } else if (color.equals("amarillo")) {
             binding.btnAmarillo.setTextColor(black)
             respuesta7 = "amarillo"
+            regalo7= "https://www.amazon.com.mx/CUBREBOCAS-PLIEGOS-EL%C3%81STICO-AMARILLO-CAJA/dp/B08ZB69Z53/ref=sr_1_24?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AJEABB7LKTU2&keywords=amarillo&qid=1652580853&sprefix=amarillo%2Caps%2C157&sr=8-24"
         } else if (color.equals("verde")) {
             binding.btnVerde.setTextColor(black)
             respuesta7 = "verde"
+            regalo7 = "https://www.amazon.com.mx/Minecraft-Gorra-b%C3%A9isbol-Snapback-j%C3%B3venes/dp/B09KZQCTZX/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=19QC6HKDN0NRJ&keywords=verde&qid=1652580883&sprefix=verde%2Caps%2C187&sr=8-1"
         } else if (color.equals("azul")) {
             binding.btnAzul.setTextColor(black)
             respuesta7 = "azul"
+            regalo7 = "https://www.amazon.com.mx/Best-Trading-Cubrebocas-Termosellado-Protecci%C3%B3n/dp/B093QBYJ8Y/ref=sr_1_14?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IRWI1CSLPT82&keywords=azul&qid=1652580921&sprefix=azul%2Caps%2C168&sr=8-14"
         } else if (color.equals("morado")) {
             binding.btnMorado.setTextColor(black)
             respuesta7 = "morado"
+            regalo7 = "https://www.amazon.com.mx/Best-Trading-Cubrebocas-Termosellado-Protecci%C3%B3n/dp/B092PV58TC/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1QQTMU4QQT01Y&keywords=morado&qid=1652580960&sprefix=morado%2Caps%2C155&sr=8-1"
         } else if (color.equals("cafe")) {
             binding.btnCafe.setTextColor(black)
             respuesta7 = "cafe"
+            regalo7 = "https://www.amazon.com.mx/Nescaf%C3%A9-Clasico-Caf%C3%A9-Sol-225/dp/B07NTVCSDS/ref=sr_1_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1NS10BAUJ5KD9&keywords=cafe&qid=1652581039&sprefix=caf%2Caps%2C178&sr=8-6"
         } else if (color.equals("negro")) {
             binding.btnNegro.setTextColor(black)
             respuesta7 = "negro"
+            regalo7 = "https://www.amazon.com.mx/Hanes-Playera-cuelllo-P2-Negro/dp/B09NQLFPTY/ref=sr_1_20?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=8C9I8TDM9IET&keywords=negro&qid=1652581066&s=amazon-super&sprefix=negro%2Cspecialty-aps%2C141&sr=8-20&srs=18073069011&th=1"
         } else if (color.equals("blanco")) {
             binding.btnBlanco.setTextColor(black)
             respuesta7 = "blanco"
+            regalo7 = "https://www.amazon.com.mx/Hanes-Playera-Redondo-Caballero-Unidades/dp/B01DZTJBLQ/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FA81NSHTZWEN&keywords=blanco&qid=1652581132&s=amazon-super&sprefix=blanco%2Cspecialty-aps%2C139&sr=8-2&srs=18073069011"
         }
     }
 
@@ -355,30 +369,40 @@ class quiz2 : AppCompatActivity() {
         if (dulces.equals("chocolate")) {
             binding.btnChocolate.setTextColor(black)
             respuesta8 = "chocolate"
+            regalo8 = "https://www.amazon.com.mx/Chocolate-Leche-Hersheys-Kisses-809/dp/B08ZXH2CY1/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3FUTRFW2BXUN0&keywords=kisses&qid=1652581197&sprefix=kisses%2Caps%2C187&sr=8-1"
         } else if (dulces.equals("gomitas")) {
             binding.btnGomitas.setTextColor(black)
             respuesta8 = "gomitas"
+            regalo8 = "https://www.amazon.com.mx/Gen%C3%A9rico-Gomitas-Panditas-Clasicas-Dulcigomas/dp/B087Z2MPT1/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=281FS3JZKAN4M&keywords=gomitas&qid=1652581212&sprefix=gomitas%2Caps%2C166&sr=8-2"
         } else if (dulces.equals("chicles")) {
             binding.btnChicles.setTextColor(black)
             respuesta8 = "chicles"
+            regalo8 = "https://www.amazon.com.mx/Trident-4S-Menta-208-Gramos/dp/B08C3KG47T/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QG1XOQ76KQ60&keywords=chicles&qid=1652581253&sprefix=chicle%2Caps%2C168&sr=8-2&th=1"
         } else if (dulces.equals("caramelo")) {
             binding.btnCaramelos.setTextColor(black)
             respuesta8 = "caramelo"
+            regalo8 = "https://www.amazon.com.mx/Starbucks-Crema-L%C3%ADquida-Caramel-Macchiato/dp/B07VTDSZPH/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13M8WSTAJLA38&keywords=caramelo&qid=1652581305&sprefix=caramelo%2Caps%2C175&sr=8-1"
         } else if (dulces.equals("chile")) {
             binding.btnChile.setTextColor(black)
             respuesta8 = "chile"
+            regalo8 = "https://www.amazon.com.mx/Paquete-Picantes-Botanas-Surtidas-Enchilados/dp/B09DS1SXZB/ref=sr_1_4?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ENBE2S800RRP&keywords=dulce+de+chile&qid=1652581341&sprefix=dulce+de+chile%2Caps%2C162&sr=8-4"
         } else if (dulces.equals("frutas")) {
             binding.btnFrutas.setTextColor(black)
             respuesta8 = "frutas"
+            regalo8 = "https://www.amazon.com.mx/Hi-Chew-Sensationally-Chewy-dulces-japonesa/dp/B07RZ3NX7J/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24FOXZ3PAOBW3&keywords=dulces+de+frutas&qid=1652581359&sprefix=dulces+de+fruta%2Caps%2C159&sr=8-1"
         } else if (dulces.equals("tipicos")) {
             binding.btnTipicos.setTextColor(black)
             respuesta8 = "tipicos"
+            regalo8 = "https://www.amazon.com.mx/Las-Sevillanas-palanqueta-mazapanes-natillas/dp/B08HJ7NHFM/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3C1TKKSD9LJMA&keywords=dulces+tipicos&qid=1652581388&sprefix=dulces+tipicos%2Caps%2C165&sr=8-1"
         } else if (dulces.equals("artesanales")) {
             binding.btnArtesanal.setTextColor(black)
             respuesta8 = "artesanales"
+            regalo8 = "https://www.amazon.com.mx/B%C3%ABfi-D%C3%A4nsu-palanquetas-cristalizada-tradicionales/dp/B093B5NTPL/ref=sr_1_2?keywords=dulces+artesanales&qid=1652581415&sprefix=dulces+artesan%2Caps%2C152&sr=8-2"
         } else if (dulces.equals("rellenos")) {
             binding.btnRellenos.setTextColor(black)
             respuesta8 = "rellenos"
+            regalo8 = "https://www.amazon.com.mx/Toffees-Caramelos-rellenos-Amaretto-Rompope/dp/B09LC2SSM5/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ZROXGXN4FK4C&keywords=dulces+rellenos&qid=1652581522&sprefix=dulces+relleno%2Caps%2C155&sr=8-3"
+
         }
     }
 
