@@ -475,4 +475,8 @@
     <string name="date2">Fecha de tu evento</string>
     <string name="nameEvent">Nombre del evento</string>
     <string name="register">Registrar evento</string>
+
+    #Request Message view screen
+    <string name="accept">Aceptar</string>
+    <string name="reject">Rechazar</string>
 </resources>

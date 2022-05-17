@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    tools:context=".request_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_usuario"
+            android:layout_width="60dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/user_friend"
+            app:civ_border_color="#FF000000" />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="187dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/rubik_bold"
+            android:paddingTop="22dp"
+            android:text="@string/friend1"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="5dp">
+
+            <Button
+                android:id="@+id/btn_accept"
+                android:layout_width="107dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/varela_round"
+                android:gravity="center"
+                android:text="@string/accept"
+                android:textSize="7dp" />
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="107dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/varela_round"
+                android:gravity="center"
+                android:text="@string/reject"
+                android:textSize="7dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
