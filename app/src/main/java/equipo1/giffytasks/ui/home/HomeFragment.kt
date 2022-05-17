@@ -63,7 +63,7 @@ class HomeFragment : Fragment() {
         val imagenview: ImageView = binding.rectangleMensaje
 
         imagenview.setOnClickListener{
-            val intent = Intent(this@HomeFragment.requireContext(), messages::class.java)
+            val intent = Intent(this@HomeFragment.requireContext(), request::class.java)
             startActivity(intent)
         }
 
