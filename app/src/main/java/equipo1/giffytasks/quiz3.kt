@@ -217,16 +217,16 @@ class quiz3 : AppCompatActivity() {
                 Toast.makeText(this, "Ingrese una modelo de celular.",
                     Toast.LENGTH_SHORT).show()
             } else if (respuesta10.equals("empty")) {
-                Toast.makeText(this, "Seleccione un tipo de regalo.",
+                Toast.makeText(this, "Seleccione un género de pelicula.",
                     Toast.LENGTH_SHORT).show()
             } else if (respuesta11.equals("empty")) {
-                Toast.makeText(this, "Seleccione un estampado.",
+                Toast.makeText(this, "Seleccione entre regalo y dinero.",
                     Toast.LENGTH_SHORT).show()
             } else if (respuesta12.equals("empty")) {
-                Toast.makeText(this, "Seleccione un color.",
+                Toast.makeText(this, "Seleccione un elemento de la cultura popular.",
                     Toast.LENGTH_SHORT).show()
             } else if (respuesta13.equals("empty")) {
-                Toast.makeText(this, "Seleccione un tipo de dulce.",
+                Toast.makeText(this, "Seleccione un tipo de regalo que no le guste.",
                     Toast.LENGTH_SHORT).show()
             } else{
                 respuesta9 = mModelo
