@@ -60,10 +60,14 @@ class AdaptadorRequest(
             addFriend(uid)
         }
         holder.btnrechaza.setOnClickListener {
-            val uid2 = FirebaseAuth.getInstance().currentUser!!.uid
-            var databaseReference = FirebaseDatabase.getInstance().getReference("users")
-            databaseReference.child("user").child(uid2).child("solicutudes").child(uid).removeValue()
+            rejectFriend(uid)
         }
+    }
+
+    private fun rejectFriend(uid: String) {
+        val uid2 = FirebaseAuth.getInstance().currentUser!!.uid
+        var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+        databaseReference.child("user").child(uid2).child("solicutudes").child(uid).removeValue()
     }
 
     private fun addFriend(uid: String) {
@@ -71,25 +75,21 @@ class AdaptadorRequest(
         var databaseReference = FirebaseDatabase.getInstance().getReference("users")
         if (uid2 != null) {
             databaseReference.child("user").child(uid2).child("amigos").push()
-                .setValue(uid).addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-
-                    } else {
-
-                    }
-                }
-
-        }
+                .setValue(uid)
+            databaseReference.child("user").child(uid2).child("solicutudes").child(uid).removeValue()
+            databaseReference.child("user").child(uid).child("amigos").push()
+                .setValue(uid2)
     }
+}
 
-    fun onClickFriend(v: View?, holder: MyViewHolder, uid: String) {
-        val intent = Intent(v!!.context, wishlist::class.java)
-        intent.putExtra("nombre", holder.nombre.text)
-        intent.putExtra("uid", uid)
-        v!!.context.startActivity(intent)
-    }
+fun onClickFriend(v: View?, holder: MyViewHolder, uid: String) {
+    val intent = Intent(v!!.context, wishlist::class.java)
+    intent.putExtra("nombre", holder.nombre.text)
+    intent.putExtra("uid", uid)
+    v!!.context.startActivity(intent)
+}
 
-    override fun getItemCount(): Int {
-        return usersList.size
-    }
+override fun getItemCount(): Int {
+    return usersList.size
+}
 }
