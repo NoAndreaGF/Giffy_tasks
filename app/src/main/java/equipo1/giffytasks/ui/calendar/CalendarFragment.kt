@@ -59,6 +59,7 @@ class CalendarFragment : Fragment() {
         btnregistrar.setOnClickListener {
             var fecha = dateView.getText() as String
             var evento = eventoTexto.getText().toString()
+
             if (TextUtils.isEmpty(fecha) or TextUtils.isEmpty(evento)) {
                 Toast.makeText(
                     this@CalendarFragment.requireContext(),
@@ -68,6 +69,7 @@ class CalendarFragment : Fragment() {
                     .show();
 
             } else {
+                eventoTexto.setText("")
                 dates(anio, mes, dia, evento)
             }
         }

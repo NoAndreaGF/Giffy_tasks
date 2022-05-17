@@ -41,7 +41,8 @@
                 android:fontFamily="@font/varela_round"
                 android:inputType="text"
                 android:paddingLeft="15dip"
-                android:text="@string/store1"
+                android:autofillHints="@string/store1"
+                android:hint="@string/store1"
                 android:textColor="@color/gray"
                 android:textSize="12dp" />
 

@@ -51,10 +51,12 @@ class StoresFragment : Fragment() {
         verMas(vermas1, vermas2, vermas3)
 
         val buscar: EditText = binding.etSearch
-        buscar.setOnClickListener{
-            val uri = Uri.parse("https://www.amazon.com.mx/")
-            val intents = Intent(Intent.ACTION_VIEW, uri)
-            startActivity(intents)
+        buscar.setOnFocusChangeListener { view, b ->
+            if (b) {
+                val uri = Uri.parse("https://www.amazon.com.mx/")
+                val intents = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intents)
+            }
         }
 
         //_binding = FragmentStoresBinding.inflate(inflater, container, false)

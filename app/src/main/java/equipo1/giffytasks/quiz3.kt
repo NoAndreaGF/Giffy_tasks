@@ -243,8 +243,10 @@ class quiz3 : AppCompatActivity() {
             databaseReference.child("user").child(uid).child("quiz").get().addOnSuccessListener { task ->
                 if (task.exists()) {
                     val celular_modelo = task.child("celular_modelo").value.toString()
-                    binding.etModelo.setText(celular_modelo)
-                    respuesta9 = celular_modelo
+                    if (celular_modelo.isEmpty()) {
+                        binding.etModelo.setText(celular_modelo)
+                        respuesta9 = celular_modelo
+                    }
                     val genero_peliculas = task.child("genero_peliculas").value.toString()
                     answer10(genero_peliculas, black)
                     val regalo_dinero = task.child("regalo_dinero").value.toString()

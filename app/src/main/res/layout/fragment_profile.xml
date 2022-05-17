@@ -72,32 +72,6 @@
         android:layout_marginTop="250dp"
         android:gravity="center">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/varela_round"
-                android:text="9"
-                android:textColor="@color/white"
-                android:textSize="30dp" />
-
-            <Button
-                android:id="@+id/amigos"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/varela_round"
-                android:text="@string/profile_friends"
-                android:textSize="12dp" />
-        </LinearLayout>
-
         <Button
             android:id="@+id/quiz"
             android:layout_width="100dp"
@@ -147,7 +121,7 @@
         android:layout_marginTop="350dp"
         android:fontFamily="@font/rubik_bold"
         android:gravity="center_horizontal"
-        android:text="@string/WISHLIST"
+        android:text="@string/recomendations"
         android:textColor="@color/white" />
 
     <LinearLayout
