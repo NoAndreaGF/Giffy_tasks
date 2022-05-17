@@ -74,13 +74,6 @@ class wishlist : AppCompatActivity() {
             }
         }
 
-        binding.btnAmigosAmigo.setOnClickListener{
-            var intent = Intent(this,list_friend::class.java)
-            intent.putExtra("nombre",  nombre)
-            intent.putExtra("uid",  uidUser)
-            startActivity(intent)
-        }
-
         binding.quizAmigo.setOnClickListener{
             var intent = Intent(this,quiz_gift::class.java)
             intent.putExtra("nombre",  nombre)

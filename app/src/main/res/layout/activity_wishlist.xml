@@ -90,18 +90,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
-                    <Button
-                        android:id="@+id/quiz_amigo"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentBottom="true"
-                        android:background="@android:color/transparent"
-                        android:drawableTop="@drawable/rectangle_quiz"
-                        android:drawablePadding="10dp"
-                        android:fontFamily="@font/varela_round"
-                        android:text="@string/profile_quiz"
-                        android:textSize="12dp" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -123,6 +111,21 @@
                         android:text="AMISTAD"
                         android:textSize="12dp" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/quiz_amigo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/rectangle_quiz"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/varela_round"
+                    android:text="@string/profile_quiz"
+                    android:textSize="12dp" />
             </GridLayout>
 
             <TextView
